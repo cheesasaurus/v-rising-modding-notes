@@ -137,5 +137,43 @@ A System can be thought of as one small Step within the pipeline of a single gam
 
 ## Hooks
 
+To run some code in response to something happening (traditionally thought of as "hooking" events), remember the ECS paradigm. The point of ECS is to efficiently perform bulk operations.
+
+For example, let's say we want to respond to an item being thrown on the ground. There is no `ThrowItemOnGround` method to hook.
+
+Instead, we hook the `Update` method of the `DropItemThrowSystem`, which is responsible for processing all items to be thrown on the ground within that tick.
+
+Most systems come with an entity query that can be used to find all the entities which will be processed by the update.
+A lot of the time those entities can be thought of as Jobs/Tasks - a specification of something to be done by the system. Which is very similar to an Event, but instead of specifying what already happened, they specify what is going to happen.
+
+[Harmony](https://harmony.pardeike.net/articles/patching-prefix.html) (included with bepinex) provides us with a Prefix and Postfix hook.
+
+The Postfix hook doesn't really help us here, because after the update is done, the entity query most likely isn't going to tell us what was processed.
+We need to use the Prefix hook, before the update happens.
+
+e.g.
+
+```
+using HarmonyLib;
+using ProjectM;
+using Unity.Collections;
+using Unity.Entities;
+
+[HarmonyPatch(typeof(DropItemThrowSystem), nameof(DropItemThrowSystem.OnUpdate))]
+public static class ItemDroppedThrownHook {
+
+    public static void Prefix(DropItemThrowSystem __instance) {
+        var jobs = __instance.__CreateDropItemThrowsJob_entityQuery.ToEntityArray(Allocator.Temp);
+        foreach (var entity in jobs) {
+            HandleItemWillBeDropped(entity);
+        }
+    }
+
+    private static void HandleItemWillBeDropped(Entity entity) {
+        Plugin.Logger.LogMessage("An item will be dropped via 'throw' job");
+    }
+
+}
+```
 
 
