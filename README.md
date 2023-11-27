@@ -116,6 +116,10 @@ e.g.
 </Target>
 ```
 
+## Logging
+
+https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/3_logging.html
+
 ## ProjectM
 
 "ProjectM" was the codename for V Rising. You will be using this namespace a lot.
