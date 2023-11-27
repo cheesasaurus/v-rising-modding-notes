@@ -21,8 +21,22 @@ Follow the installation instructions at the link.
 
 After installation, you will need to run the game once and bepinex will generate a bunch of stuff.
 
+## General mod installation
 
+Installing a mod is as simple as copying a DLL file into the `./BepInEx/Plugins/` directory of your server
 
+## Bloodstone
+
+Bloodstone provides some hot-reloading capabilities for your mods so you don't have to restart the server every time you want to test a change.
+
+It also provides some convenient things through its `VWorld` helper. I've found myself using `VWorld.Server.EntityManager` a lot.
+
+https://v-rising.thunderstore.io/package/deca/Bloodstone/
+
+Follow the installation instructions at the link.
+
+To hot reload mods you will put them in `./BepInEx/BloodstonePlugins/` instead of the usual Plugins folder.
+Hot reloading is done via in-game chat. Admins can type `!reload` into the chat to trigger a reload.
 
 
 
