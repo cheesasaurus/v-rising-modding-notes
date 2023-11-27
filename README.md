@@ -23,7 +23,7 @@ After installation, you will need to run the game once and bepinex will generate
 
 ## General mod installation
 
-Installing a mod is as simple as copying a DLL file into the `./BepInEx/Plugins/` directory of your server
+Installing a mod is as simple as copying a DLL file into the `./BepInEx/Plugins/` directory of your server.
 
 ## Bloodstone
 
@@ -37,6 +37,16 @@ Follow the installation instructions at the link.
 
 To hot reload mods you will put them in `./BepInEx/BloodstonePlugins/` instead of the usual Plugins folder.
 Hot reloading is done via in-game chat. Admins can type `!reload` into the chat to trigger a reload.
+
+## VCF
+Vampire Chat Framework (VCF) is a framework for creating chat commands.
+
+What's a chat command? Its like a console command, except using the in-game chat instead of a console.
+If you've played on a duel server and given yourself a blood potion by typing `.bp` - that is a chat command.
+
+https://v-rising.thunderstore.io/package/deca/VampireCommandFramework/
+
+
 
 
 
