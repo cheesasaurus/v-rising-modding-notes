@@ -82,6 +82,33 @@ e.g.
 </configuration>
 ```
 
+## Development Workflow
+
+This is how I do it:
+1) Start the V Rising server.
+2) Start the V Rising client and connect to the server.
+3) Iterate on the project.
+
+Project iteration looks like this:
+1) Make some code changes in my project.
+2) Build the project with `dotnet build`
+3) Copy the DLL to `BepInEx/BloodstonePlugins/`
+4) Go in the game and type `!reload` in the chat.
+5) Test changes in game.
+6) Repeat
+
+Step 3 can be automated with some changes to the `.csproj` file in your project.
+
+e.g.
+```
+<PropertyGroup>
+  <VRisingServerPath>E:\Games\SteamLibrary\steamapps\common\VRisingDedicatedServer</VRisingServerPath>
+</PropertyGroup>
+
+<Target Name="Deploy To Dev" AfterTargets="AfterBuild">
+  <Copy SourceFiles="$(OutputPath)\MyMod.dll" DestinationFolder="$(VRisingServerPath)/BepInEx/BloodstonePlugins" />
+</Target>
+```
 
 
 
