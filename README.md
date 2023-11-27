@@ -178,4 +178,11 @@ public static class ItemDroppedThrownHook {
 }
 ```
 
+## Use Existing Mods as Example Code
+
+I believe all V Rising mods from [thunderstore](https://v-rising.thunderstore.io/) are open source.
+
+e.g.
+
+
 
