@@ -1,6 +1,7 @@
 # V Rising Modding
 This repo will contain notes about modding V Rising.
 
+
 ## Hosting a dedicated server locally
 
 In steam library, use the filter to show **Tools** in addition to Games.
@@ -11,6 +12,7 @@ https://www.youtube.com/watch?v=4qeEyTVV-qU
 
 You will probably want to make yourself an admin. Find the adminlist and put your steam id in there.
 At the time of writing, I found the adminlist in the server folder at `.\save-data\Settings\adminlist.txt`
+
 
 ## BepInEx
 
@@ -28,6 +30,7 @@ After installation, you will need to run the game once and bepinex will generate
 
 Installing a mod is as simple as copying a DLL file into the `./BepInEx/Plugins/` directory of your server.
 
+
 ## Bloodstone
 
 Bloodstone provides some hot-reloading capabilities for your mods so you don't have to restart the server every time you want to test a change.
@@ -41,6 +44,7 @@ Follow the installation instructions at the link.
 To hot reload mods you will put them in `./BepInEx/BloodstonePlugins/` instead of the usual Plugins folder.
 Hot reloading is done via in-game chat. Admins can type `!reload` into the chat to trigger a reload.
 
+
 ## VCF
 Vampire Command Framework (VCF) is a framework for creating chat commands.
 
@@ -51,6 +55,7 @@ https://v-rising.thunderstore.io/package/deca/VampireCommandFramework/
 
 Follow the installation instructions at the link.
 
+
 ## .NET SDK
 
 You will need .NET SDK version 6.0 to create your own mods.
@@ -58,6 +63,7 @@ You will need .NET SDK version 6.0 to create your own mods.
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 At the time of writing, version 8 was recently released. Do not use that. V Rising uses version 6. Its ok if you have something newer already - you will be able to specify the TargetFramework for your project. But you still need to install SDK version 6.
+
 
 ## Creating your own mod
 
@@ -116,6 +122,7 @@ e.g.
 </Target>
 ```
 
+
 ## Logging
 
 https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/3_logging.html
@@ -140,6 +147,7 @@ Pretty much anything you do tends to follow this pattern
 A Component is just a bag of data related to an Entity. For example, an entity that can walk around might have an associated WorldPosition component with x, y, z properties.
 
 A System can be thought of as one small Step within the pipeline of a single game tick. Each tick updates *hundreds* of systems.
+
 
 ## Hooks
 
@@ -195,6 +203,12 @@ e.g.
 
 dotPeek is a free (and awesome) tool for decompiling DLLs.
 https://www.jetbrains.com/decompiler/
+
+
+## Prefab GUIDs
+
+https://github.com/cheesasaurus/v-rising-prefabs-gloomrot
+
 
 ## Snippets
 
