@@ -187,4 +187,9 @@ The source tab shows a truncated version of the decompiled DLL. You most likely 
 e.g.
 ![example](./thunderstore-github-link.png)
 
+## Decompiling DLLs
+
+dotPeek is a free (and awesome) tool for decompiling DLLs.
+https://www.jetbrains.com/decompiler/
+
 
