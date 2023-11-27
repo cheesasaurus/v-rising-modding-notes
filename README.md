@@ -114,6 +114,28 @@ e.g.
 </Target>
 ```
 
+## ProjectM
+
+"ProjectM" was the codename for V Rising. You will be using this namespace a lot.
+
+
+## ECS
+
+V Rising is built on [Unity DOTS](https://unity.com/dots), which is an Entity Component System (ECS).
+
+If you're going to get anywhere, you need to understand the ECS paradigm.
+https://en.wikipedia.org/wiki/Entity_component_system
+
+Pretty much anything you do tends to follow this pattern
+1) Get a handle on one or more Entities (sometimes using the [EntityManager](https://docs.unity3d.com/Packages/com.unity.entities@0.0/api/Unity.Entities.EntityManager.html))
+2) Load particular Components of those Entities that you need for some operation (usually using the EntityManager)
+3) Perform the operation in bulk
+
+A Component is just a bag of data related to an Entity. For example, an entity that can walk around might have an associated WorldPosition component with x, y, z properties.
+
+A System can be thought of as one small Step within the pipeline of a single game tick. Each tick updates *hundreds* of systems.
+
+## Hooks
 
 
 
