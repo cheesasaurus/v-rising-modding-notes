@@ -46,6 +46,17 @@ If you've played on a duel server and given yourself a blood potion by typing `.
 
 https://v-rising.thunderstore.io/package/deca/VampireCommandFramework/
 
+Follow the installation instructions at the link.
+
+## .NET SDK
+
+You will need .NET SDK version 6.0.
+
+https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
+At the time of writing, version 8 was recently released. Do not use that. V Rising uses version 6. Its ok if you have something newer already - you will be able to specify the TargetFramework for your project. But you still need to install SDK version 6.
+
+
 
 
 
