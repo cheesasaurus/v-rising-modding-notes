@@ -66,12 +66,14 @@ https://github.com/decaprime/VRising.ModTemplate
 
 The README explains how to install and use the project template. Note that you have to be in in the `templates` dir to do the installation step.
 
+Example usage: `dotnet new vrisingmod -n DingusPlayground --description "Dingus's Playground" --use-vcf --use-bloodstone`
+
 The template creates something similar to what you would get from following the [bepinex tutorial](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html), with some additional stuff:
 - Bloodstone and VCF already set up
 - nuget.config
 - an example VCF command (commented out) in Plugin.cs
 
-If can't build your project due to unresolved package references, you may need to tweak nuget.config (I had to). Most of the dependencies are available on [nuget.org](https://www.nuget.org/packages), so add it as a source.
+If you can't build your project due to unresolved package references, you may need to tweak nuget.config (I had to). Most of the dependencies are available on [nuget.org](https://www.nuget.org/packages), so add it as a source.
 
 e.g.
 ```
