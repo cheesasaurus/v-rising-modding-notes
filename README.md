@@ -192,4 +192,20 @@ e.g.
 dotPeek is a free (and awesome) tool for decompiling DLLs.
 https://www.jetbrains.com/decompiler/
 
+## Snippets
+
+check component types of an entity
+```
+var componentTypes = VWorld.Server.EntityManager.GetComponentTypes(entity);
+foreach (var componentType in componentTypes) {
+    Plugin.Logger.LogMessage(componentType.ToString());
+}
+```
+
+get specific component of an entity
+```
+// this retrieves the Equipment component of a character Entity
+var equipment = VWorld.Game.EntityManager.GetComponentData<Equipment>(characterEntity);
+```
+
 
