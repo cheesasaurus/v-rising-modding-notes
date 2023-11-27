@@ -9,6 +9,9 @@ There is a tool called "V Rising Dedicated Server" - this is what's used to run 
 This video is slightly outdated but its a good starting point.
 https://www.youtube.com/watch?v=4qeEyTVV-qU
 
+You will probably want to make yourself an admin. Find the adminlist and put your steam id in there.
+At the time of writing, I found the adminlist in the server folder at `.\save-data\Settings\adminlist.txt`
+
 ## BepInEx
 
 Bepis Injector Extensible (BepInEx) is the magic that makes it all possible.
@@ -68,7 +71,7 @@ The template creates something similar to what you would get from following the 
 - nuget.config
 - an example VCF command (commented out) in Plugin.cs
 
-If can't build your project due to unresolved package references, you may need to modify nuget.config (I had to). Most of the dependencies are available on [nuget.org](https://www.nuget.org/packages), so add it as a source.
+If can't build your project due to unresolved package references, you may need to tweak nuget.config (I had to). Most of the dependencies are available on [nuget.org](https://www.nuget.org/packages), so add it as a source.
 
 e.g.
 ```
@@ -78,6 +81,7 @@ e.g.
     <add key="Samboy Feed" value="https://nuget.samboy.dev/v3/index.json" />
 
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+
   </packageSources>
 </configuration>
 ```
