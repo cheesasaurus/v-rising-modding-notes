@@ -182,7 +182,9 @@ public static class ItemDroppedThrownHook {
 
 I believe all V Rising mods from [thunderstore](https://v-rising.thunderstore.io/) are open source.
 
-e.g.
+The source tab shows a truncated version of the decompiled DLL. You most likely want the *actual* source, so use the github link.
 
+e.g.
+![example](./thunderstore-github-link.png)
 
 
