@@ -1,0 +1,34 @@
+some components seen on a shard item in an inventory
+
+ItemData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+DestroyData
+DestroyState
+Age
+CreatedTime
+LifeTime
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+Relic
+AttachParentId
+AttachedBuffer [B]
+AttachMapIconsToEntity [B]
+MapIconPerUserData [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+UpdateAgeWhenDisabled
+UpdateLifeTimeWhenDisabled
+InventoryItem
+DisableWhenNoPlayersInRange
+Networked
+EntitySpawnedMetadata
+EntityMetadata
+NetworkSnapshotType
