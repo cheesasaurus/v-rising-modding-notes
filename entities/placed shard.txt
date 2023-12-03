@@ -1,0 +1,90 @@
+some components seen on a shard that's been placed down
+
+BlueprintData
+EntityOwner
+EntityCreator
+BuffResistances
+TeamReference
+UserOwner
+EditableTileModel
+CastleHeartConnection
+DismantleDestroyData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+PhysicsCollider
+StaticPhysicsWorldBodyIndex
+PlacementDestroyData
+DestroyData
+DestroyState
+Buffable
+CreatedTime
+Health
+HealthConstants
+CollisionRadius
+Team
+JoinDefaultTeamOnSpawn
+TileBounds
+TilePosition
+TileModelSpatialData
+TileData
+BuffableFlagState
+EntityCategory
+ModifiableValueIds
+StaticTransformCompatible
+ImpactMaterial
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+TileModel
+CastleBuildingAttachSettings
+CastleBuildingMaxRange
+Relic
+CastleAreaRequirement
+StaticHierarchyData
+Interactable
+InteractedUpon
+DropTableOnDeath
+AttachParentId
+LinkedEntityGroup [B]
+AttachedBuffer [B]
+BuffBuffer [B]
+EntityModificationBuffer [B]
+FloatModificationBuffer [B]
+IntModificationBuffer [B]
+LongModificationBuffer [B]
+StaticHierarchyBuffer [B]
+CastleBuildingAttachToParentsBuffer [B]
+CastleBuildingAttachedChildrenBuffer [B]
+BlueprintRequirementBuffer [B]
+AttachMapIconsToEntity [B]
+MapIconPerUserData [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+InteractAbilityBuffer [B]
+CreateGameplayEventsOnSpawn [B]
+DropTableBuffer [B]
+Snapshot_CastleBuildingAttachedChildrenBuffer [B]
+Snapshot_CastleBuildingAttachToParentsBuffer [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+TileCollisionTag
+TilePathfindingTag
+TileLineOfSightTag
+TilePlacementTag
+Networked
+RunCastleCleanupOnDeath
+RequireGroundedTag
+MoveStopTrigger
+DropTable
+DropTableOnDestroy
+RestrictPlacementToMapZones
+EntitySpawnedMetadata
+EntityMetadata
+BlobAssetOwner
+TileModelRegistrationState
+NetworkSnapshotType
+TileModelLayer
