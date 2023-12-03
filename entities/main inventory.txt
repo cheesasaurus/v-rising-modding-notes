@@ -1,0 +1,32 @@
+some components seen on a character's main inventory
+
+[Message:ShardPolice] Attach
+[Message:ShardPolice] InventoryConnection
+[Message:ShardPolice] LocalToWorld
+[Message:ShardPolice] Rotation
+[Message:ShardPolice] Translation
+[Message:ShardPolice] PrefabGUID
+[Message:ShardPolice] DestroyData
+[Message:ShardPolice] DestroyState
+[Message:ShardPolice] NetworkedSettings
+[Message:ShardPolice] UpToDateUserBitMask
+[Message:ShardPolice] OnlySyncToUserBitMask
+[Message:ShardPolice] FrameChanged
+[Message:ShardPolice] NetworkId
+[Message:ShardPolice] NetworkSnapshot
+[Message:ShardPolice] Attached
+[Message:ShardPolice] InventoryBuffer [B]
+[Message:ShardPolice] InventoryInstanceElement [B]
+[Message:ShardPolice] OnlySyncToUserBuffer [B]
+[Message:ShardPolice] NetSnapshot [B]
+[Message:ShardPolice] SnapshotFrameChangedBuffer [B]
+[Message:ShardPolice] Snapshot_InventoryBuffer [B]
+[Message:ShardPolice] PrefabCollectionPrefabTag
+[Message:ShardPolice] UsesSpawnTag
+[Message:ShardPolice] InventoryOwner
+[Message:ShardPolice] DisableWhenNoPlayersInRange
+[Message:ShardPolice] Networked
+[Message:ShardPolice] EntitySpawnedMetadata
+[Message:ShardPolice] EntityMetadata
+[Message:ShardPolice] NetworkSnapshotType
+[Message:ShardPolice] AttachedDepth
