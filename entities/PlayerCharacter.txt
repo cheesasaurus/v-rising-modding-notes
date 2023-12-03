@@ -1,0 +1,153 @@
+Some components seen on a PlayerCharacter entity:
+
+AbilityBar_Server
+AbilityBar_Shared
+Blood
+Equipment
+BuffResistances
+PlayerCharacter
+TeamReference
+ReturnToNetherWaypoint
+BloodMoonBuffState
+Mounter
+Resident
+TakeDamageInSun
+TakeDamageInSunDebuffState
+EntityInput
+ControlledBy
+BagHolder
+Interactor
+Residency
+RespawnCharacter
+CurrentTileModelEditing
+Script_CreateGameplayEventOnDamageDealtToEntityCategory_DataServer
+Script_ApplyBuffUnderHealthThreshhold_DataServer
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+PhysicsCollider
+StaticPhysicsWorldBodyIndex
+AbilityBarInitializationState
+Aggroable
+FactionReference
+VBloodConsumeSource
+PlacementDestroyData
+CustomizationFeatures
+DestroyData
+DestroyState
+Energy
+Buffable
+GlobalCooldown
+Hideable
+Stealthable
+Health
+HealthConstants
+Immortal
+LastTranslation
+Movement
+PavementBonus
+CollisionRadius
+MapCollision
+Velocity
+TargetDirection
+Team
+TileBounds
+TilePosition
+TileModelSpatialData
+TileData
+VBloodAbilityOwnerData
+BloodMoonBuff
+BuffableFlagState
+CanFly
+EntityCategory
+LifeLeech
+Vision
+EntityAimData
+MoveVelocity
+ModifiableValueIds
+ResistanceData
+UnitStats
+DamageCategoryStats
+ResistCategoryStats
+ImpactMaterial
+NetworkedTimeout
+NetworkedSettings
+UpToDateUserBitMask
+Latency
+FrameChanged
+NetworkId
+NetworkSnapshot
+TileModel
+HybridModelSeed
+DeathRagdollForce
+FallToHeight
+CombatMusicListener_Shared
+Crowdedness
+Interactable
+InteractedUpon
+TravelToTargetRadius
+DynamicCollision
+Height
+JumpFromCliffs
+CharacterVoiceActivity
+IsSpellControlled
+RestrictPlacementArea
+LightningAttractorGameplay
+NetworkInterpolated_Shared
+AttachParentId
+LinkedEntityGroup [B]
+FollowerBuffer [B]
+AttachedBuffer [B]
+AbilityGroupSlotBuffer [B]
+BuffBuffer [B]
+InventoryInstanceElement [B]
+VBloodAbilityBuffEntry [B]
+EntitiesInView_Server [B]
+BoolModificationBuffer [B]
+EntityModificationBuffer [B]
+FloatModificationBuffer [B]
+Float3ModificationBuffer [B]
+IntModificationBuffer [B]
+LongModificationBuffer [B]
+PrefabGUIDModificationBuffer [B]
+CombatMusicListener_SourceElement [B]
+EquipmentSetBuff [B]
+BloodQualityBuff [B]
+AttachMapIconsToEntity [B]
+MapIconPerUserData [B]
+GameplayEventListeners [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+CrowdednessPlayerBufferElement [B]
+BuffByItemCategoryCount [B]
+BuffOnConnectionStatusElement [B]
+InteractAbilityBuffer [B]
+CreateGameplayEventsOnAbilityTrigger [B]
+CreateGameplayEventsOnAbilityTriggerAbilityPrefabTargets [B]
+CreateGameplayEventOnDamageTaken [B]
+CreateGameplayEventsOnSpawn [B]
+ApplyBuffOnGameplayEvent [B]
+GameplayEventIdMapping [B]
+Snapshot_FollowerBuffer [B]
+Snapshot_InventoryInstanceElement [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+InventoryOwner
+TilePlacementTag
+TileRestrictionAreaTag
+RadialDamageTarget
+DisableWhenNoPlayersInRange
+ScriptSpawn
+Networked
+MoveStopTrigger
+HideOutsideVision
+VampireTag
+CanBuildTileModels
+EntitySpawnedMetadata
+IsConnected
+EntityMetadata
+BlobAssetOwner
+TileModelRegistrationState
+NetworkSnapshotType
+TileModelLayer
