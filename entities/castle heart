@@ -1,0 +1,115 @@
+BlueprintData
+EntityOwner
+EntityCreator
+BuffResistances
+TeamReference
+UserOwner
+WorkstationAssignedServant
+EditableTileModel
+Pylonstation
+CastleHeart
+CastleHeartConnection
+CastleFloor
+CastleFloorRoof
+CastleRoomConnection
+DismantleDestroyData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+PhysicsCollider
+StaticPhysicsWorldBodyIndex
+StationServants
+CastleWorkstation
+PlacementDestroyData
+DestroyData
+DestroyState
+Buffable
+CreatedTime
+Health
+HealthConstants
+Immortal
+RestrictedInventory
+MapPylonArea
+CollisionRadius
+Team
+JoinDefaultTeamOnSpawn
+TileBounds
+TilePosition
+TileModelSpatialData
+TileData
+BuffableFlagState
+EntityCategory
+ModifiableValueIds
+StaticTransformCompatible
+ImpactMaterial
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+TileModel
+CastleBuildingAttachSettings
+CastleBuildingMaxRange
+CastleDecayAndRegen
+CastleAreaRequirement
+DurabilityTarget
+Interactable
+InteractedUpon
+SyncBoundingBox
+AttachParentId
+EventData
+EventData
+AttachedBuffer [B]
+BuffBuffer [B]
+InventoryBuffer [B]
+InventoryInstanceElement [B]
+EntityModificationBuffer [B]
+FloatModificationBuffer [B]
+IntModificationBuffer [B]
+LongModificationBuffer [B]
+ActiveServantMission [B]
+CastleTeleporterElement [B]
+CastleBuildingAttachToParentsBuffer [B]
+CastleBuildingAttachedChildrenBuffer [B]
+BlueprintRequirementBuffer [B]
+StationBonusBuffer [B]
+Restricted_InventoryBuffer [B]
+AttachMapIconsToEntity [B]
+MapIconPerUserData [B]
+RefinementstationRecipesBuffer [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+CastleMemberNames [B]
+InteractAbilityBuffer [B]
+PylonstationUpgradesBuffer [B]
+PylonstationCastleClaimBuffer [B]
+PylonstationCastleRaidBuffer [B]
+PylonstationCastleDestroyBuffer [B]
+Snapshot_ActiveServantMission [B]
+Snapshot_CastleBuildingAttachedChildrenBuffer [B]
+Snapshot_CastleBuildingAttachToParentsBuffer [B]
+Snapshot_CastleMemberNames [B]
+Snapshot_CastleTeleporterElement [B]
+Snapshot_InventoryBuffer [B]
+Snapshot_Restricted_InventoryBuffer [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+InventoryOwner
+TileCollisionTag
+TilePathfindingTag
+TileHeightTag
+TileLineOfSightTag
+TilePlacementTag
+ScriptSpawn
+Networked
+RunCastleCleanupOnDeath
+RequireGroundedTag
+MoveStopTrigger
+RestrictPlacementToMapZones
+EntitySpawnedMetadata
+EntityMetadata
+BlobAssetOwner
+TileModelRegistrationState
+NetworkSnapshotType
+TileModelLayer
