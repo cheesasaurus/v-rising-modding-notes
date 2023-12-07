@@ -1,0 +1,24 @@
+PrefabGUID
+DestroyData
+DestroyState
+ClanTeam
+TeamData
+NetworkedSettings
+UpToDateUserBitMask
+OnlySyncToUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+TeamAllies [B]
+OnlySyncToUserBuffer [B]
+ClanMemberStatus [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+Snapshot_ClanMemberStatus [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+Networked
+AlwaysNetworked
+EntitySpawnedMetadata
+EntityMetadata
+NetworkSnapshotType
