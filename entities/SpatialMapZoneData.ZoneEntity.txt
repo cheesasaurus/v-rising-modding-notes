@@ -1,0 +1,7 @@
+CastleTerritory
+MapZoneData
+TerritoryWorldRegion
+MapZonePolygonVertexElement [B]
+CastleTerritoryBlocks [B]
+CastleTerritoryTiles [B]
+LoadedCastleTerritory
