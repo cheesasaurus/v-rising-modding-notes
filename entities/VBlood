@@ -1,0 +1,163 @@
+AbilityBar_Server
+AbilityBar_Shared
+AggroConsumer
+Follower
+EntityOwner
+EntityCreator
+BuffResistances
+TeamReference
+EntityInput
+AiMove_Server
+BehaviourTreeInstance
+LastPathRequest
+SpawnedBy
+Script_ApplyBuffUnderHealthThreshhold_DataServer
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+PhysicsCollider
+StaticPhysicsWorldBodyIndex
+AbilityBarInitializationState
+GainAggroByAlert
+GainAggroByVicinity
+GainAlertByVicinity
+AggroModifiers
+AlertModifiers
+AggroDamageHistoryConfig
+AiPrioritization_Data
+AiPrioritization_State
+Aggroable
+AiMoveSpeeds
+CastHistoryData
+FactionReference
+BloodConsumeSource
+VBloodConsumeSource
+VBloodRewardSequence
+PlacementDestroyData
+DestroyData
+DestroyState
+Buffable
+Hideable
+Stealthable
+Health
+HealthConstants
+DynamicallyWeakenAttackers
+Immortal
+LastTranslation
+Movement
+CollisionRadius
+MapCollision
+Velocity
+SpawnTransform
+TargetDirection
+Team
+JoinDefaultTeamOnSpawn
+TileBounds
+TilePosition
+TileModelSpatialData
+TileData
+UnitRespawnTime
+VBloodUnit
+WoundedConstants
+BuffableFlagState
+EntityCategory
+ApplyBuffOnSpawn
+UnitLevel
+UnitLevel_Extra
+Vision
+EntityAimData
+MoveVelocity
+ModifiableValueIds
+ResistanceData
+UnitStats
+DamageCategoryStats
+ResistCategoryStats
+AiMove_Shared
+UnitSpawnData
+GenericCombatMovementData
+MiscAiGameplayData
+ImpactMaterial
+NetworkedTimeout
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+BehaviourTreeBinding
+BehaviourTreeState
+BehaviourTreeStateMetadata
+TileModel
+HybridModelSeed
+DeathRagdollForce
+AiDebugDraw
+Pathfinder
+CastleAreaRequirement
+Interactable
+InteractedUpon
+TravelToTargetRadius
+DynamicCollision
+Height
+DropTableOnDeath
+AoETargetImportance
+IsSpellControlled
+NetworkInterpolated_Shared
+AttachParentId
+AggroBuffer [B]
+AlertBuffer [B]
+AggroCandidateBufferElement [B]
+AggroDamageHistoryBufferElement [B]
+ExternalAggroBufferElement [B]
+AttachedBuffer [B]
+AbilityGroupSlotBuffer [B]
+BuffBuffer [B]
+EntitiesInView_Server [B]
+BoolModificationBuffer [B]
+EntityModificationBuffer [B]
+FloatModificationBuffer [B]
+Float3ModificationBuffer [B]
+IntModificationBuffer [B]
+LongModificationBuffer [B]
+PrefabGUIDModificationBuffer [B]
+BehaviourTreeStateActiveBuffsBuffer [B]
+BlackboardElement [B]
+CastHistoryBufferElement [B]
+RandomBloodTypeBuffer [B]
+BloodQualityUnitBuff [B]
+VBloodUnlockTechBuffer [B]
+SpawnBuffElement [B]
+GameplayEventListeners [B]
+BloodQualityCurveSetting [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+BehaviourTreeStateBuffsBuffer [B]
+PathBuffer [B]
+PathRequestFilledSegmentBuffer [B]
+PathRequestSolveDebugBuffer [B]
+UnsmoothedPathBuffer [B]
+InteractAbilityBuffer [B]
+CreateGameplayEventsOnSpawn [B]
+ApplyBuffOnGameplayEvent [B]
+GameplayEventIdMapping [B]
+CrowdednessSetting [B]
+DropTableBuffer [B]
+Script_SCTChatOnAggro_Buffer [B]
+BehaviourTreeNodeInstanceElement [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+MoveEntity
+TilePlacementTag
+DisableWhenNoPlayersInRange
+ScriptSpawn
+Networked
+CombatMusicSource_Server
+MoveStopTrigger
+SnapToHeight
+HideOutsideVision
+DropTable
+EntitySpawnedMetadata
+EntityMetadata
+BlobAssetOwner
+TileModelRegistrationState
+NetworkSnapshotType
+TileModelLayer
