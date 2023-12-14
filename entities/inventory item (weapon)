@@ -1,0 +1,31 @@
+Equippable
+ItemData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+DestroyData
+DestroyState
+EquippableData
+WeaponLevelSource
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+Salvageable
+Durability
+RecipeRequirementBuffer [B]
+ModifyUnitStatBuff_DOTS [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+ReplaceAbilityOnSlotWhenMountedBuffElement [B]
+ReplaceAbilityOnSlotWhenMountedBuffModificationElement [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+InventoryItem
+DisableWhenNoPlayersInRange
+Networked
+EntitySpawnedMetadata
+EntityMetadata
+NetworkSnapshotType
