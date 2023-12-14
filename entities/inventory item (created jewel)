@@ -1,0 +1,30 @@
+ItemData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+DestroyData
+DestroyState
+JewelLevelSource
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+Salvageable
+JewelInstance
+GeneratedName
+SpellModSetComponent
+JewelArithmeticModification [B]
+RecipeRequirementBuffer [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+InventoryItem
+DisableWhenNoPlayersInRange
+Networked
+ManuallyGenerated
+EntitySpawnedMetadata
+EntityMetadata
+NetworkSnapshotType
