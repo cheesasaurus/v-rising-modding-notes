@@ -1,0 +1,76 @@
+ProgressionMapper
+TeamReference
+EntityInput
+Controller
+User
+InputCommandDataProxy
+AchievementOwner
+CurrentMapZone
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+ClanRole
+DestroyData
+DestroyState
+Emoter
+Shapeshift
+Team
+JoinDefaultTeamOnSpawn
+ModifiableValueIds
+CurrentWorldRegion
+NetworkedSettings
+UpToDateUserBitMask
+OnlySyncToUserBitMask
+Latency
+FrameChanged
+NetworkId
+NetworkSnapshot
+DisconnectedTimer
+UserHeartCount
+AdminUser
+ConnectedUser
+ServerNetworkState
+AttachParentId
+AttachedBuffer [B]
+BoolModificationBuffer [B]
+EntityModificationBuffer [B]
+OnlySyncToUserBuffer [B]
+InputCommandBufferElement [B]
+AllyPermission [B]
+RespawnPointOwnerBuffer [B]
+UserMapZoneElement [B]
+QueuedWorkstationCraftAction [B]
+QueuedWorkstationCraftActionItems [B]
+WorkstationRecipesBuffer [B]
+UnlockedWaypointElement [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+TileCollisionHistoryElement [B]
+TileGameplayHeightsHistoryElement [B]
+TileCollisionHistoryMetadataElement [B]
+TileDisabledCollisionHistoryElement [B]
+InputCommandStateHistoryBufferElement [B]
+DefaultAction [B]
+EmoteAbility [B]
+ShapeshiftAbility [B]
+Snapshot_AllyPermission [B]
+Snapshot_QueuedWorkstationCraftAction [B]
+Snapshot_RespawnPointOwnerBuffer [B]
+Snapshot_UnlockedWaypointElement [B]
+Snapshot_UserMapZoneElement [B]
+UserDestroyedEntityBuffer [B]
+IncomingClientMessage [B]
+IncomingNetBuffer [B]
+UserNetBuffer [B]
+PriorityEntitiesToSerializeBuffer [B]
+PanicEntitiesToSerializeBuffer [B]
+UserEntityNetworkState [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+Networked
+AlwaysNetworked
+EntitySpawnedMetadata
+IsConnected
+EntityMetadata
+NetworkSnapshotType
