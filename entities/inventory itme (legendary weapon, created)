@@ -1,0 +1,38 @@
+Equippable
+ItemData
+LocalToWorld
+Rotation
+Translation
+PrefabGUID
+DestroyData
+DestroyState
+EquippableData
+WeaponLevelSource
+NetworkedSettings
+UpToDateUserBitMask
+FrameChanged
+NetworkId
+NetworkSnapshot
+Salvageable
+Durability
+LegendaryItemInstance
+GeneratedName
+LegendaryItemSpellModSetComponent
+LegendaryItemGeneratorTemplate
+JewelArithmeticModification [B]
+RecipeRequirementBuffer [B]
+ModifyUnitStatBuff_DOTS [B]
+NetSnapshot [B]
+SnapshotFrameChangedBuffer [B]
+ReplaceAbilityOnSlotWhenMountedBuffElement [B]
+ReplaceAbilityOnSlotWhenMountedBuffModificationElement [B]
+PrefabCollectionPrefabTag
+UsesSpawnTag
+InventoryItem
+DisableWhenNoPlayersInRange
+Networked
+ManuallyGenerated
+EntitySpawnedMetadata
+EntityMetadata
+BlobAssetOwner
+NetworkSnapshotType
