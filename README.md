@@ -104,10 +104,11 @@ This is how I do it:
 Project iteration looks like this:
 1) Make some code changes in my project.
 2) Build the project with `dotnet build`
-3) Copy the DLL to `BepInEx/BloodstonePlugins/`
-4) Go in the game and type `!reload` in the chat.
-5) Test changes in game.
-6) Repeat
+   - if you need dlls for dependencies, you can use `dotnet publish` instead
+4) Copy the DLL to `BepInEx/BloodstonePlugins/`
+5) Go in the game and type `!reload` in the chat.
+6) Test changes in game.
+7) Repeat
 
 Step 3 can be automated with some changes to the `.csproj` file in your project.
 
