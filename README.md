@@ -135,7 +135,7 @@ https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/3_logging.html
 
 ## ECS
 
-V Rising is built on [Unity DOTS](https://unity.com/dots), which is an Entity Component System (ECS).
+V Rising is built on [Unity DOTS](https://unity.com/dots), which is an Entity Component System (ECS) framework.
 
 If you're going to get anywhere, you need to understand the ECS paradigm.
 https://en.wikipedia.org/wiki/Entity_component_system
