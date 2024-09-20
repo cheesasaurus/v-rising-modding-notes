@@ -1,0 +1,144 @@
+ProjectM.Mountable
+ProjectM.AbilityBar_Server
+ProjectM.AbilityBar_Shared
+ProjectM.AggroConsumer
+ProjectM.Follower
+ProjectM.EntityOwner
+ProjectM.EntityCreator
+ProjectM.BuffResistances
+ProjectM.FeedableInventory
+ProjectM.EntityInput
+ProjectM.AiMove_Server
+ProjectM.Behaviours.BehaviourTreeInstance
+ProjectM.Pathfinding.LastPathRequest
+ProjectM.CastleAreaRequirement
+ProjectM.CastOptionsUser
+ProjectM.Interactable
+ProjectM.InteractedUpon
+ProjectM.DynamicCollision
+ProjectM.Height
+ProjectM.NameableInteractable
+ProjectM.AoETargetImportance
+ProjectM.YieldEssenceOnDeath
+ProjectM.IsSpellControlled
+ProjectM.Network.NetworkInterpolated_Shared
+ProjectM.AbilityBarInitializationState
+ProjectM.GainAggroByAlert
+ProjectM.GainAggroByVicinity
+ProjectM.GainAlertByVicinity
+ProjectM.AggroModifiers
+ProjectM.AlertModifiers
+ProjectM.AggroDamageHistoryConfig
+ProjectM.AiPrioritization_Data
+ProjectM.AiPrioritization_State
+ProjectM.AiMoveSpeeds
+ProjectM.CastHistoryData
+ProjectM.FactionReference
+ProjectM.PlacementDestroyData
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Buffable
+ProjectM.Hideable
+ProjectM.Stealthable
+ProjectM.Health
+ProjectM.HealthConstants
+ProjectM.DynamicallyWeakenAttackers
+ProjectM.LastTranslation
+ProjectM.Movement
+ProjectM.CollisionRadius
+ProjectM.MapCollision
+ProjectM.Velocity
+ProjectM.SpawnTransform
+ProjectM.TargetDirection
+ProjectM.Team
+ProjectM.TileBounds
+ProjectM.TileModelSpatialData
+ProjectM.TileData
+ProjectM.UnitRespawnTime
+ProjectM.WoundedConstants
+ProjectM.BuffableFlagState
+ProjectM.EntityCategory
+ProjectM.ApplyBuffOnSpawn
+ProjectM.UnitLevel
+ProjectM.UnitLevelServerData
+ProjectM.Vision
+ProjectM.EntityAimData
+ProjectM.MoveVelocity
+ProjectM.CanPreventDisableWhenNoPlayersInRange
+ProjectM.ResistanceData
+ProjectM.UnitStats
+ProjectM.DamageCategoryStats
+ProjectM.ResistCategoryStats
+ProjectM.AiMove_Shared
+ProjectM.UnitSpawnData
+ProjectM.GenericCombatMovementData
+ProjectM.MiscAiGameplayData
+ProjectM.IsMinion
+ProjectM.Sequencer.ImpactMaterial
+ProjectM.Network.Networked
+ProjectM.Network.NetworkedTimeout
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Behaviours.BehaviourTreeBinding
+ProjectM.Behaviours.BehaviourTreeState
+ProjectM.Behaviours.BehaviourTreeStateMetadata
+ProjectM.Tiles.TileModel
+ProjectM.Hybrid.HybridModelSeed
+ProjectM.Shared.DropTableOnDeath
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Physics.PhysicsCollider
+Unity.Physics.Systems.StaticPhysicsWorldBodyIndex
+ProjectM.AiDebugDraw
+ProjectM.Pathfinding.Pathfinder
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.TeamReference
+ProjectM.TilePosition
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+ProjectM.AggroBuffer [Buffer]
+ProjectM.AlertBuffer [Buffer]
+ProjectM.AggroCandidateBufferElement [Buffer]
+ProjectM.AggroDamageHistoryBufferElement [Buffer]
+ProjectM.ExternalAggroBufferElement [Buffer]
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.AbilityGroupSlotBuffer [Buffer]
+ProjectM.BuffBuffer [Buffer]
+ProjectM.InventoryInstanceElement [Buffer]
+ProjectM.EntitiesInView_Server [Buffer]
+ProjectM.Behaviours.BehaviourTreeStateActiveBuffsBuffer [Buffer]
+ProjectM.InteractAbilityBuffer [Buffer]
+ProjectM.CreateGameplayEventsOnTick [Buffer]
+ProjectM.HealOnGameplayEvent [Buffer]
+ProjectM.GameplayEventIdMapping [Buffer]
+ProjectM.CrowdednessDropTableSettingsAsset+CrowdednessSetting [Buffer]
+ProjectM.CastHistoryBufferElement [Buffer]
+ProjectM.SpawnBuffElement [Buffer]
+ProjectM.GameplayEventListeners [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.Behaviours.BehaviourTreeStateBuffsBuffer [Buffer]
+ProjectM.Shared.DropTableBuffer [Buffer]
+ProjectM.Behaviours.BehaviourTreeNodeInstanceElement [Buffer]
+ProjectM.Pathfinding.PathBuffer [Buffer]
+ProjectM.Pathfinding.PathRequestFilledSegmentBuffer [Buffer]
+ProjectM.Pathfinding.PathRequestSolveDebugBuffer [Buffer]
+ProjectM.Pathfinding.UnsmoothedPathBuffer [Buffer]
+Stunlock.Sequencer.BlackboardElement [Buffer]
+ProjectM.MoveStopTrigger
+ProjectM.SnapToHeight
+ProjectM.HideOutsideVision
+ProjectM.CharmSource
+ProjectM.MoveEntity
+ProjectM.TilePlacementTag
+ProjectM.DisableWhenNoPlayersInRange
+ProjectM.Shared.DropTable
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.TileModelRegistrationState
+ProjectM.Network.NetworkSnapshotType
+ProjectM.Tiles.TileModelLayer
+Unity.Physics.PhysicsWorldIndex
