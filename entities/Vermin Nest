@@ -1,0 +1,96 @@
+ProjectM.DismantleDestroyData
+ProjectM.UnitSpawnerstation
+ProjectM.BlueprintData
+ProjectM.BuffResistances
+ProjectM.UserOwner
+ProjectM.WorkstationAssignedServant
+ProjectM.EditableTileModel
+ProjectM.CastleBuilding.CastleHeartConnection
+ProjectM.CastleBuilding.CastleRoomConnection
+ProjectM.Gameplay.Scripting.Script_ApplyBuffUnderHealthThreshold_DataServer
+ProjectM.CastleDecayAndRegen
+ProjectM.CastleAreaRequirement
+ProjectM.Interactable
+ProjectM.InteractedUpon
+ProjectM.NameableInteractable
+ProjectM.CastleBuilding.CastleRebuildPhaseState
+ProjectM.CastleLimited
+ProjectM.StationServants
+ProjectM.CastleWorkstation
+ProjectM.PlacementDestroyData
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Buffable
+ProjectM.CreatedTime
+ProjectM.Health
+ProjectM.HealthConstants
+ProjectM.Immortal
+ProjectM.InventoryOwner
+ProjectM.CollisionRadius
+ProjectM.Team
+ProjectM.TileBounds
+ProjectM.TileModelSpatialData
+ProjectM.TileData
+ProjectM.ArmorLevel
+ProjectM.BuffableFlagState
+ProjectM.EntityCategory
+ProjectM.StaticTransformCompatible
+ProjectM.Sequencer.ImpactMaterial
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Tiles.TileModel
+ProjectM.CastleBuilding.CastleBuildingAttachSettings
+ProjectM.CastleBuilding.CastleBuildingMaxRange
+ProjectM.Hybrid.HybridModelSeed
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Physics.PhysicsCollider
+Unity.Physics.Systems.StaticPhysicsWorldBodyIndex
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.TeamReference
+ProjectM.TilePosition
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+
+ProjectM.CastleBuilding.CastleBuildingAttachToParentsBuffer [Buffer]
+ProjectM.CastleBuilding.CastleBuildingAttachedChildrenBuffer [Buffer]
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.SpawnedUnitsBuffer [Buffer]
+ProjectM.BuffBuffer [Buffer]
+ProjectM.InventoryInstanceElement [Buffer]
+ProjectM.InteractAbilityBuffer [Buffer]
+ProjectM.CreateGameplayEventsOnSpawn [Buffer]
+ProjectM.ApplyBuffOnGameplayEvent [Buffer]
+ProjectM.GameplayEventIdMapping [Buffer]
+ProjectM.UnitSpawnPointBuffer [Buffer]
+ProjectM.Network.Snapshot_CastleBuildingAttachedChildrenBuffer [Buffer]
+ProjectM.Network.Snapshot_CastleBuildingAttachToParentsBuffer [Buffer]
+ProjectM.Network.Snapshot_InventoryInstanceElement [Buffer]
+ProjectM.Network.Snapshot_RefinementstationRecipesBuffer [Buffer]
+ProjectM.Network.Snapshot_SpawnedUnitsBuffer [Buffer]
+ProjectM.BlueprintRequirementBuffer [Buffer]
+ProjectM.StationBonusBuffer [Buffer]
+ProjectM.RefinementstationRecipesBuffer [Buffer]
+ProjectM.GameplayEventListeners [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.CastleBuilding.Placement.RestrictPlacementToMapZones
+ProjectM.TileCollisionTag
+ProjectM.TilePathfindingTag
+ProjectM.TileHeightTag
+ProjectM.TileLineOfSightTag
+ProjectM.TilePlacementTag
+ProjectM.Scripting.ScriptSpawn
+ProjectM.Tiles.RunCastleCleanupOnDeath
+ProjectM.CastleBuilding.Rebuilding.CastleRebuildUniqueTag
+ProjectM.CastleBuilding.Rebuilding.CastleRebuildRequiredTag
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.TileModelRegistrationState
+ProjectM.Network.NetworkSnapshotType
+ProjectM.Tiles.TileModelLayer
+Unity.Physics.PhysicsWorldIndex
