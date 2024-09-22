@@ -42,7 +42,8 @@ https://v-rising.thunderstore.io/package/deca/Bloodstone/
 Follow the installation instructions at the link.
 
 To hot reload mods you will put them in `./BepInEx/BloodstonePlugins/` instead of the usual Plugins folder.
-Hot reloading is done via in-game chat. Admins can type `!reload` into the chat to trigger a reload.
+Hot reloading for client-side mods is triggered by pressing the key F9.
+Hot reloading for server-side mods is done via in-game chat. Admins (must be authed) can type `!reload` into the chat to trigger a reload.
 
 
 ## VCF
