@@ -1,0 +1,37 @@
+ProjectM.PlayerDeathContainer
+ProjectM.Sequencer.SpawnSequenceForEntity
+ProjectM.Interactable
+ProjectM.InteractedUpon
+ProjectM.Height
+ProjectM.ItemPickup
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.DestroyAfterDuration
+ProjectM.InventoryOwner
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Shared.FallToHeight
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Physics.PhysicsCollider
+Unity.Physics.Systems.StaticPhysicsWorldBodyIndex
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.InventoryInstanceElement [Buffer]
+ProjectM.InteractAbilityBuffer [Buffer]
+ProjectM.Network.Snapshot_InventoryInstanceElement [Buffer]
+ProjectM.AttachMapIconsToEntity [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.DestroyWhenInventoryIsEmpty
+ProjectM.DisableWhenNoPlayersInRange
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.Network.NetworkSnapshotType
+Unity.Physics.PhysicsWorldIndex
