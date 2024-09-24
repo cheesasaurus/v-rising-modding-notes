@@ -1,115 +1,96 @@
-BlueprintData
-EntityOwner
-EntityCreator
-BuffResistances
-TeamReference
-UserOwner
-WorkstationAssignedServant
-EditableTileModel
-Pylonstation
-CastleHeart
-CastleHeartConnection
-CastleFloor
-CastleFloorRoof
-CastleRoomConnection
-DismantleDestroyData
-LocalToWorld
-Rotation
-Translation
-PrefabGUID
-PhysicsCollider
-StaticPhysicsWorldBodyIndex
-StationServants
-CastleWorkstation
-PlacementDestroyData
-DestroyData
-DestroyState
-Buffable
-CreatedTime
-Health
-HealthConstants
-Immortal
-RestrictedInventory
-MapPylonArea
-CollisionRadius
-Team
-JoinDefaultTeamOnSpawn
-TileBounds
-TilePosition
-TileModelSpatialData
-TileData
-BuffableFlagState
-EntityCategory
-ModifiableValueIds
-StaticTransformCompatible
-ImpactMaterial
-NetworkedSettings
-UpToDateUserBitMask
-FrameChanged
-NetworkId
-NetworkSnapshot
-TileModel
-CastleBuildingAttachSettings
-CastleBuildingMaxRange
-CastleDecayAndRegen
-CastleAreaRequirement
-DurabilityTarget
-Interactable
-InteractedUpon
-SyncBoundingBox
-AttachParentId
-EventData
-EventData
-AttachedBuffer [B]
-BuffBuffer [B]
-InventoryBuffer [B]
-InventoryInstanceElement [B]
-EntityModificationBuffer [B]
-FloatModificationBuffer [B]
-IntModificationBuffer [B]
-LongModificationBuffer [B]
-ActiveServantMission [B]
-CastleTeleporterElement [B]
-CastleBuildingAttachToParentsBuffer [B]
-CastleBuildingAttachedChildrenBuffer [B]
-BlueprintRequirementBuffer [B]
-StationBonusBuffer [B]
-Restricted_InventoryBuffer [B]
-AttachMapIconsToEntity [B]
-MapIconPerUserData [B]
-RefinementstationRecipesBuffer [B]
-NetSnapshot [B]
-SnapshotFrameChangedBuffer [B]
-CastleMemberNames [B]
-InteractAbilityBuffer [B]
-PylonstationUpgradesBuffer [B]
-PylonstationCastleClaimBuffer [B]
-PylonstationCastleRaidBuffer [B]
-PylonstationCastleDestroyBuffer [B]
-Snapshot_ActiveServantMission [B]
-Snapshot_CastleBuildingAttachedChildrenBuffer [B]
-Snapshot_CastleBuildingAttachToParentsBuffer [B]
-Snapshot_CastleMemberNames [B]
-Snapshot_CastleTeleporterElement [B]
-Snapshot_InventoryBuffer [B]
-Snapshot_Restricted_InventoryBuffer [B]
-PrefabCollectionPrefabTag
-UsesSpawnTag
-InventoryOwner
-TileCollisionTag
-TilePathfindingTag
-TileHeightTag
-TileLineOfSightTag
-TilePlacementTag
-ScriptSpawn
-Networked
-RunCastleCleanupOnDeath
-RequireGroundedTag
-MoveStopTrigger
-RestrictPlacementToMapZones
-EntitySpawnedMetadata
-EntityMetadata
-BlobAssetOwner
-TileModelRegistrationState
-NetworkSnapshotType
-TileModelLayer
+ProjectM.DismantleDestroyData
+ProjectM.BlueprintData
+ProjectM.BuffResistances
+ProjectM.UserOwner
+ProjectM.WorkstationAssignedServant
+ProjectM.EditableTileModel
+ProjectM.CastleBuilding.CastleHeart
+ProjectM.CastleBuilding.CastleHeartConnection
+ProjectM.CastleBuilding.CastleFloor
+ProjectM.CastleBuilding.CastleFloorRoof
+ProjectM.CastleBuilding.CastleRoomConnection
+ProjectM.CastleDecayAndRegen
+ProjectM.CastleAreaRequirement
+ProjectM.DurabilityTarget
+ProjectM.Interactable
+ProjectM.InteractedUpon
+ProjectM.CastleBuilding.CastleRebuildPhaseState
+ProjectM.StationServants
+ProjectM.CastleWorkstation
+ProjectM.PlacementDestroyData
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Buffable
+ProjectM.CreatedTime
+ProjectM.Health
+ProjectM.HealthConstants
+ProjectM.Immortal
+ProjectM.InventoryOwner
+ProjectM.CollisionRadius
+ProjectM.Team
+ProjectM.TileBounds
+ProjectM.TileModelSpatialData
+ProjectM.TileData
+ProjectM.BuffableFlagState
+ProjectM.EntityCategory
+ProjectM.StaticTransformCompatible
+ProjectM.Sequencer.ImpactMaterial
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.SyncToUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Network.SyncBoundingBox
+ProjectM.Tiles.TileModel
+ProjectM.CastleBuilding.CastleBuildingAttachSettings
+ProjectM.CastleBuilding.CastleBuildingMaxRange
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Physics.PhysicsCollider
+Unity.Physics.Systems.StaticPhysicsWorldBodyIndex
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.TeamReference
+ProjectM.TilePosition
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+
+
+ProjectM.CastleBuilding.CastleBuildingAttachToParentsBuffer [Buffer]
+ProjectM.CastleBuilding.CastleBuildingAttachedChildrenBuffer [Buffer]
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.BuffBuffer [Buffer]
+ProjectM.InventoryInstanceElement [Buffer]
+ProjectM.Network.SyncToUserBuffer [Buffer]
+ProjectM.CastleBuilding.ActiveServantMission [Buffer]
+ProjectM.CastleBuilding.CastleTeleporterElement [Buffer]
+ProjectM.InteractAbilityBuffer [Buffer]
+ProjectM.Network.Snapshot_ActiveServantMission [Buffer]
+ProjectM.Network.Snapshot_CastleBuildingAttachedChildrenBuffer [Buffer]
+ProjectM.Network.Snapshot_CastleBuildingAttachToParentsBuffer [Buffer]
+ProjectM.Network.Snapshot_CastleMemberNames [Buffer]
+ProjectM.Network.Snapshot_CastleTeleporterElement [Buffer]
+ProjectM.Network.Snapshot_InventoryInstanceElement [Buffer]
+ProjectM.BlueprintRequirementBuffer [Buffer]
+ProjectM.AttachMapIconsToEntity [Buffer]
+ProjectM.RefinementstationRecipesBuffer [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.CastleBuilding.CastleMemberNames [Buffer]
+ProjectM.MoveStopTrigger
+ProjectM.CastleBuilding.Placement.RestrictPlacementToMapZones
+ProjectM.TileCollisionTag
+ProjectM.TilePathfindingTag
+ProjectM.TileHeightTag
+ProjectM.TileLineOfSightTag
+ProjectM.TilePlacementTag
+ProjectM.Scripting.ScriptSpawn
+ProjectM.Tiles.RunCastleCleanupOnDeath
+ProjectM.CastleBuilding.RequireGroundedTag
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.TileModelRegistrationState
+ProjectM.Network.NetworkSnapshotType
+ProjectM.Tiles.TileModelLayer
+Unity.Physics.PhysicsWorldIndex
