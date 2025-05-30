@@ -45,7 +45,7 @@ SystemC
 After:
 ```
 ExistingSystemA
-  MyGroup
+MyGroup
     MyPrefixSystem
     SystemB
     MyPostfixSystem
