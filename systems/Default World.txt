@@ -1,0 +1,42 @@
+Information about ECS Systems in world: Default World
+
+[Counts]
+ComponentSystemGroup: 9
+ComponentSystemBase (excluding group instances): 28
+ISystem: 3
+<unknown>: 0
+
+[Hierarchy] note: the ordering at root level is arbitrary, but everything within a group is in order for that group
+Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 4 children
+    Unity.Entities.BeginSimulationEntityCommandBufferSystem (ComponentSystemBase)
+    Unity.Entities.EndSimulationEntityCommandBufferSystem (ComponentSystemBase)
+    Unity.Entities.BeginSimulationEntityCommandBufferSystem (ComponentSystemBase)
+    Unity.Entities.EndSimulationEntityCommandBufferSystem (ComponentSystemBase)
+Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) - 14 children
+    Unity.Entities.BeginInitializationEntityCommandBufferSystem (ComponentSystemBase)
+    ProjectM.ECBSyncPointManager (ComponentSystemBase)
+    ProjectM.Auth.PlatformSystemBase (ComponentSystemBase)
+    ProjectM.RuntimeConversionSystem (ComponentSystemBase)
+    Unity.Entities.UpdateWorldTimeSystem (ComponentSystemBase)
+    ProjectM.UI.ResetConsoleKeybindingsSystem (ComponentSystemBase)
+    ProjectM.ConsoleCommandGroup (ComponentSystemGroup) - 2 children
+        ProjectM.MemoryDumpConsoleCommandSystem (ComponentSystemBase)
+        ProjectM.DefaultWorldConsoleCommandSystem (ComponentSystemBase)
+    ProjectM.Auth.EOSPlatformSystem (ComponentSystemBase)
+    ProjectM.DateTimeSystem (ComponentSystemBase)
+    Unity.Scenes.SceneSystemGroup (ComponentSystemGroup) - 4 children
+        Unity.Scenes.SceneSystem (ISystem)
+        Unity.Entities.SystemBase (ComponentSystemBase)
+        Unity.Scenes.SceneSectionStreamingSystem (ComponentSystemBase)
+        ProjectM.SetupRetainBlobAssetsSystem (ComponentSystemBase)
+    ProjectM.FixGlobalVersionOverflowSystem (ComponentSystemBase)
+    ProjectM.ReactToSceneLoadedGroup (ComponentSystemGroup) - 1 children
+        ProjectM.SceneLoadSystem (ISystem)
+    ProjectM.PrefabInitializationGroup (ComponentSystemGroup) - 2 children
+        Stunlock.Core.ManagedDataSystem_Base (ComponentSystemBase)
+        ProjectM.SingletonPrefabInstantiationSystem (ISystem)
+    Unity.Entities.EndInitializationEntityCommandBufferSystem (ComponentSystemBase)
+Unity.Entities.PresentationSystemGroup (ComponentSystemGroup) - 2 children
+    Unity.Entities.BeginPresentationEntityCommandBufferSystem (ComponentSystemBase)
+    ProjectM.AudioGroup (ComponentSystemGroup) - 0 children
+ProjectM.ServerWorldManager (ComponentSystemBase)
