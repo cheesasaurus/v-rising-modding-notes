@@ -44,12 +44,12 @@ SystemC
 ```
 After:
 ```
-ExistingSystemA
+SystemA
 MyGroup
     MyPrefixSystem
     SystemB
     MyPostfixSystem
-ExistingSystemC
+SystemC
 ```
 
 ### Problems with this approach
