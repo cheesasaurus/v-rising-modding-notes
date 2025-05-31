@@ -1,65 +1,79 @@
 Information about ECS Systems in world: Server
 
+
 [Counts]
-ComponentSystemGroup: 73
+ComponentSystemGroup: 72
 ComponentSystemBase (excluding group instances): 704
 ISystem: 111
-<unknown>: 252
+<unknown system type>: 251
 
-[Hierarchy] note: the ordering at root level is arbitrary, but everything within a group is in order for that group
-Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
+
+[Known Unknowns] - systems of <unknown system type> are likely one of these
+Issue: Cannot search for systems using Types containing unknown generic parameters
+    ProjectM.DebugWorldTileBoundsSystem`2[TDebugWorldTileBounds,TTileTypeTag]
+    ProjectM.GameplayEventTypesGenericBakingSystem_Initialize`1[TBufferType]
+    ProjectM.GameplayEventTypesGenericBakingSystem`1[TBufferType]
+    ProjectM.AssetSubSceneStreamingHandler`1[TSingleton]
+    ProjectM.UI.FullscreenMenuViewMapperSystem`1[TMenu]
+    ProjectM.UI.PowerSelectionMenuMapperSystem`1[TMenu]
+    ProjectM.DrawTileGridSystem`2[TShowTileGrid,TGridIsActiveTag]
+    ProjectM.Shared.Systems.RegisterSpawnedChunkObjectsSystem`1[TRequiredType]
+
+
+[Update Hierarchy] note: the ordering at root level is arbitrary, but everything within a group is in update order for that group
+Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) | 22 children
     ProjectM.SetupSyncedServerDebugSettingsForWorld_SimulationSystemGroup (ComponentSystemBase)
     Unity.Entities.BeginSimulationEntityCommandBufferSystem (ComponentSystemBase)
     ProjectM.BeforeStartSimulationGroupBarrier (ComponentSystemBase)
-    ProjectM.StartSimulationGroup (ComponentSystemGroup) - 8 children
-        <unknown system>
+    ProjectM.StartSimulationGroup (ComponentSystemGroup) | 8 children
+        <unknown system type>
         ProjectM.DestroyEntitiesBarrier_Server (ComponentSystemBase)
-        ProjectM.DestroyGroup_Server (ComponentSystemGroup) - 2 children
+        ProjectM.DestroyGroup_Server (ComponentSystemGroup) | 2 children
             ProjectM.Network.ReturnNetworkIdSystem_Server (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
         ProjectM.StartSimulationGroupBarrier (ComponentSystemBase)
-        ProjectM.AfterDestroyGroup_Server (ComponentSystemGroup) - 2 children
+        ProjectM.AfterDestroyGroup_Server (ComponentSystemGroup) | 2 children
             ProjectM.TriggerPersistenceSaveSystem (ComponentSystemBase)
-            ProjectM.PersistenceGroup (ComponentSystemGroup) - 2 children
+            ProjectM.PersistenceGroup (ComponentSystemGroup) | 2 children
                 ProjectM.SerializePersistenceSystemV2 (ComponentSystemBase)
                 ProjectM.TestSerializedPersistenceSystem (ComponentSystemBase)
         ProjectM.Network.CommandUtility+TileCollisionHistorySystem_Base (ComponentSystemBase)
-        ProjectM.StartSimulationNetworkGroup (ComponentSystemGroup) - 6 children
+        ProjectM.StartSimulationNetworkGroup (ComponentSystemGroup) | 6 children
             ProjectM.ServerBootstrapSystem (ComponentSystemBase)
             ProjectM.PlatformUserBlockSystem_Server (ComponentSystemBase)
             ProjectM.UI.UserConnectionChangedEventSystem (ComponentSystemBase)
             ProjectM.ServerWebAPISystem (ComponentSystemBase)
             ProjectM.UserContentLockSystem (ComponentSystemBase)
             ProjectM.DebugEventsSystem (ComponentSystemBase)
-        ProjectM.DeserializeGroup (ComponentSystemGroup) - 4 children
-            ProjectM.DeserializeComponentsGroup (ComponentSystemGroup) - 0 children
-            ProjectM.ReactToDeserializeGroup (ComponentSystemGroup) - 1 children
+        ProjectM.DeserializeGroup (ComponentSystemGroup) | 4 children
+            ProjectM.DeserializeComponentsGroup (ComponentSystemGroup) | 0 children
+            ProjectM.ReactToDeserializeGroup (ComponentSystemGroup) | 1 children
                 ProjectM.ReactToDeserializedDebugSettingsSystem_Server (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.Network.UpdateEntityInput_Server (ComponentSystemBase)
     CleanupDestroyPreventionSystem (ComponentSystemBase)
-    ProjectM.EarlyUpdateGroup (ComponentSystemGroup) - 4 children
+    ProjectM.EarlyUpdateGroup (ComponentSystemGroup) | 4 children
         ProjectM.ActuallyDisableSystem (ComponentSystemBase)
         ProjectM.Behaviours.DisableNpcsSystem (ComponentSystemBase)
         ProjectM.Scripting.ScriptMapperPrepareDependenciesSystem (ComponentSystemBase)
         ProjectM.CastleBuilding.ApplyPlacementHistorySystem (ISystem)
-    ProjectM.UpdateGroup (ComponentSystemGroup) - 330 children
-        <unknown system>
-        Unity.Entities.SystemBase (ComponentSystemBase)
+    ProjectM.UpdateGroup (ComponentSystemGroup) | 330 children
+        <unknown system type>
+        ProjectM.UnlockResearchSystem (ComponentSystemBase)
         ProjectM.TravelBuffSystem (ISystem)
         ProjectM.WorkstationUnassignInvalidServantsSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.MountSystem_Server (ComponentSystemBase)
         ProjectM.ForceJoinClanEventSystem_Server (ComponentSystemBase)
         ProjectM.StablesSystem_MountItemGain (ComponentSystemBase)
         ProjectM.MorganaWorshipperSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.ToggleSalvagestationSystem (ComponentSystemBase)
         ProjectM.ShareUnitRecipeSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.TraderPurchaseSystem (ComponentSystemBase)
         ProjectM.ShareRefinementSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.ActivateDraculaWarpRiftSystem (ComponentSystemBase)
         ProjectM.UpdateMicroPOIManagerSystem (ComponentSystemBase)
         ProjectM.DefaultActionsSystem (ComponentSystemBase)
@@ -76,9 +90,9 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.EquipSaddleSystem (ComponentSystemBase)
         ProjectM.BonfireSystemUpdateCloud (ComponentSystemBase)
         ProjectM.GetUserStatsEventSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
+        <unknown system type>
         ProjectM.Gameplay.Systems.LeftFarbaneAchievementSystem (ComponentSystemBase)
         ProjectM.RemoveLingeringServantMissionBuffsSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.PlayerTeleportSystem (ComponentSystemBase)
@@ -88,27 +102,27 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.VivoxConnectionSystem (ComponentSystemBase)
         ProjectM.UnEquipItemSystem (ComponentSystemBase)
         ProjectM.ToggleRefiningSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.SharedInventorySystem_Syncing (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.EquipItemSystem (ComponentSystemBase)
         ProjectM.ImprisonedBuffSystem (ComponentSystemBase)
         ProjectM.ServantCoffinstationActionSystem (ComponentSystemBase)
         ProjectM.CompleteAchievementSystem (ComponentSystemBase)
         ProjectM.DebugEventsSystem+Debug_SpawnBuffs (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.TeleportToWaypointEventSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.DropInventoryItemSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.IdleInteractionSystem_PointReached (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.ServantSummonIfIdleOutsideTerritorySystem (ComponentSystemBase)
         ProjectM.StablesSystem_ClientEvents (ComponentSystemBase)
         ProjectM.ClaimAchievementSystem (ComponentSystemBase)
         ProjectM.Shared.Systems.ServantMissionUpdateSystem (ComponentSystemBase)
         ProjectM.Contest.Arena.CastleArenaFlagDebugEventSystem_Server (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.UseConsumableSystem (ComponentSystemBase)
         ProjectM.Modify_BuffModificationsSystem_Server (ComponentSystemBase)
         ProjectM.Gameplay.Systems.StartCharacterCraftingSystem (ComponentSystemBase)
@@ -128,10 +142,10 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.SetOwnerRotateTowardsMouseSystem (ComponentSystemBase)
         ProjectM.CustomizeCharacterSystem (ComponentSystemBase)
         ProjectM.ServerShutdownSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.MoveItemBetweenInventoriesSystem (ComponentSystemBase)
-        ProjectM.CharacterSpawnGroup (ComponentSystemGroup) - 3 children
-            ProjectM.ReactToCharacterSpawnGroup (ComponentSystemGroup) - 1 children
+        ProjectM.CharacterSpawnGroup (ComponentSystemGroup) | 3 children
+            ProjectM.ReactToCharacterSpawnGroup (ComponentSystemGroup) | 1 children
                 ProjectM.Gameplay.Systems.ResetBloodOnRespawnSystem (ComponentSystemBase)
             ProjectM.Gameplay.Systems.RemoveReactToCharacterSpawnTag (ComponentSystemBase)
             ProjectM.Gameplay.Systems.SpawnCharacterSystem (ComponentSystemBase)
@@ -151,7 +165,7 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.BacktraceSystem (ComponentSystemBase)
         ProjectM.UpdateModifyTeamBuffSystem (ComponentSystemBase)
         ProjectM.PlayerMapZonesDiscoverySystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.SpellSchoolProgressionEventSystem_EquipPassives (ComponentSystemBase)
         ProjectM.Gameplay.Scripting.RadialZoneSystem_Garlic_Server (ISystem)
         ProjectM.FadeToBlackSystem_Server (ComponentSystemBase)
@@ -168,49 +182,49 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.BindCoffinSystem (ComponentSystemBase)
         ProjectM.Scripting.ScriptUpdateServer (ComponentSystemBase)
         ProjectM.Shared.Systems.ScheduledFunctionSystem (ComponentSystemBase)
-        ProjectM.AiGroup (ComponentSystemGroup) - 16 children
-            <unknown system>
+        ProjectM.AiGroup (ComponentSystemGroup) | 16 children
+            <unknown system type>
             ProjectM.ReapplySpawnBuffOnResetSystem (ISystem)
             ProjectM.Pathfinding.RoadPathfindingSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
             ProjectM.AiPrioritizationSystem (ISystem)
-            <unknown system>
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
             ProjectM.AggroSystem (ISystem)
             ProjectM.Behaviours.BehaviourTreeSystem (ISystem)
             ProjectM.AiMoveSystem_Server (ISystem)
             ProjectM.RepairInverseAggroSystem (ISystem)
-            ProjectM.AiSubGroup1 (ComponentSystemGroup) - 1 children
+            ProjectM.AiSubGroup1 (ComponentSystemGroup) | 1 children
                 ProjectM.Behaviours.EvaluateCastOptionsSystem (ComponentSystemBase)
             ProjectM.Behaviours.BehaviourTreeParallelWriteSystem (ISystem)
-            ProjectM.AiSubGroup2 (ComponentSystemGroup) - 7 children
-                <unknown system>
-                <unknown system>
+            ProjectM.AiSubGroup2 (ComponentSystemGroup) | 7 children
+                <unknown system type>
+                <unknown system type>
                 ProjectM.Behaviours.BehaviourTreeStateBuffsSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.KillAllMinionsEventSystem (ComponentSystemBase)
                 ProjectM.Pathfinding.PathfindingSystem_Metrics (ComponentSystemBase)
                 ProjectM.Pathfinding.PathfindingSystem (ComponentSystemBase)
-        ProjectM.InputGroup (ComponentSystemGroup) - 2 children
-            ProjectM.SetInputGroup (ComponentSystemGroup) - 3 children
+        ProjectM.InputGroup (ComponentSystemGroup) | 2 children
+            ProjectM.SetInputGroup (ComponentSystemGroup) | 3 children
                 ProjectM.MoveTowardsPositionSystem_Server_Update (ComponentSystemBase)
                 ProjectM.MoveTowardsPositionSystem_Shared_Update (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
             ProjectM.MoveTowardsRotationSystem_Shared (ComponentSystemBase)
         ProjectM.Scripting.GenericEventSystem (ComponentSystemBase)
         ProjectM.Gameplay.Clan.ClanSystem_Server (ComponentSystemBase)
         ProjectM.SortSingleInventorySystem (ComponentSystemBase)
         ProjectM.CastleBuilding.Rebuilding.CastleRebuildCastleHeartSync (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.ResetBuffAgeEventSystem_Server (ComponentSystemBase)
         ProjectM.ShapeshiftSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.ForgeSystem_Events (ComponentSystemBase)
         ProjectM.CastleBuilding.Placement.SetTerritoryWorldRegionSystem (ComponentSystemBase)
         ProjectM.ServantPowerSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.EmoteSystem (ComponentSystemBase)
         ProjectM.ModifyBloodDrainSystem_Update (ComponentSystemBase)
         ProjectM.UpdateSalvageSystem (ComponentSystemBase)
@@ -229,17 +243,17 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.Gameplay.Systems.TrophySystem_Events_Server (ComponentSystemBase)
         ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryServerEventSystem (ISystem)
         ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferInitializeSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.WarEventDropItemsSystem (ComponentSystemBase)
         ProjectM.HandleDismantleEventSystem (ComponentSystemBase)
         ProjectM.SplitItemSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.TeleportToPlayerLocationSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
         ProjectM.BonfireSystem_Server (ComponentSystemBase)
         ProjectM.HealingBuffSystem (ComponentSystemBase)
         ProjectM.StartChargingSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.ReplaceAbilityOnSlotWhenMountedBuffSystem_Update (ISystem)
         ProjectM.Gameplay.Systems.GetTranslationOnUpdateSystem (ComponentSystemBase)
         ProjectM.JewelCraftingUpdateSystem (ComponentSystemBase)
@@ -248,16 +262,16 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.JewelCraftingStopSystem (ComponentSystemBase)
         ProjectM.SystemMessageSystem (ComponentSystemBase)
         ProjectM.CastleBuilding.CastleBuildingAttachmentBuffSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.WalkBackAndForthSystem (ComponentSystemBase)
         ProjectM.UpdatePrisonSystem (ComponentSystemBase)
         ProjectM.NoAdminSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Contest.ContestSystem_Update (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.CreateGameplayEventOnTimePassedSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.TeleportPlayerToUnitSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.BloodAltarSystem_StartTrackVBloodUnit_System_V2 (ComponentSystemBase)
         ProjectM.FusionForgeSystem_Events (ComponentSystemBase)
         ProjectM.StablesSystem_Update (ISystem)
@@ -270,49 +284,49 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.StopCraftingSystem (ComponentSystemBase)
         ProjectM.Gameplay.TransmogModeEventSystem_Server (ComponentSystemBase)
         ProjectM.Gameplay.Scripting.RadialZoneSystem_Holy_Server (ISystem)
-        <unknown system>
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
+        <unknown system type>
         ProjectM.MusicPlayerStationSystem_Events (ComponentSystemBase)
         ProjectM.BloodMixerSystem_Update (ComponentSystemBase)
         ProjectM.InsideSystem_Server (ComponentSystemBase)
         ProjectM.Gameplay.Systems.CastleHeartStateUpdateSystem (ComponentSystemBase)
         ProjectM.CastleRepairBuffDestroySystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.TeleportPlayerLocationSystem (ComponentSystemBase)
         ProjectM.UnitCompositionSpawnerSystem (ISystem)
-        ProjectM.ScheduleParentGroup (ComponentSystemGroup) - 3 children
+        ProjectM.ScheduleParentGroup (ComponentSystemGroup) | 3 children
             ProjectM.GarbageCollectArchetypeSystem (ComponentSystemBase)
-            ProjectM.ScheduleGroup (ComponentSystemGroup) - 4 children
+            ProjectM.ScheduleGroup (ComponentSystemGroup) | 4 children
                 ProjectM.AutoChainTransitionSystem (ISystem)
-                <unknown system>
+                <unknown system type>
                 ProjectM.RandomizedSpawnChainUpdateSystem (ComponentSystemBase)
                 ProjectM.CheckInSunSystem (ComponentSystemBase)
-            ProjectM.NoStructuralChangesGroup (ComponentSystemGroup) - 20 children
+            ProjectM.NoStructuralChangesGroup (ComponentSystemGroup) | 20 children
                 ProjectM.DisableWhenNoPlayersInRangeOfChunkSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.HitCastColliderSystem_OnUpdate (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.DestroyAfterDurationSystem_Update (ISystem)
                 ProjectM.SunSystem (ComponentSystemBase)
                 ProjectM.PavementBonusSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.FlyLastValidPositionSystem (ComponentSystemBase)
                 ProjectM.VerifyRespawnPointConnectionsSystem (ComponentSystemBase)
                 ProjectM.Gameplay.InventoryRoute_RecalculateCastleHeartRouteCount (ISystem)
                 ProjectM.Terrain.UpdateUserWorldRegionSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
         ProjectM.PatrolMoveSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.SpawnRegionConsumeSpawnRequestSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.TeleportBuffSystem_Server (ComponentSystemBase)
         ProjectM.NameableInteractableSystem (ComponentSystemBase)
         ProjectM.WeaponCoating.CoatingEquipSystem (ComponentSystemBase)
@@ -321,12 +335,12 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.Gameplay.Systems.UserAgeSystem (ComponentSystemBase)
         ProjectM.HandleCreateCharacterEventSystem (ComponentSystemBase)
         ProjectM.UnitSpawnerUpdateSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.MoveSpeedBuffSystem (ComponentSystemBase)
         ProjectM.KillEventSystem (ComponentSystemBase)
         ProjectM.Hybrid.TransmogEventsSystem (ComponentSystemBase)
         ProjectM.Gameplay.Scripting.RadialZoneSystem_Corruption_Server (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.InteractValidateAndStopSystemServer (ComponentSystemBase)
         ProjectM.Gameplay.Systems.InteractSystemServer (ISystem)
         ProjectM.Gameplay.Systems.DoorSystem_Server (ComponentSystemBase)
@@ -335,15 +349,15 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.BloodMixerSystem_Events (ComponentSystemBase)
         ProjectM.DropItemSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.GiveCombatPresetSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
         ProjectM.BloodAltarSystem_StopTrackVBloodUnit_System (ComponentSystemBase)
         ProjectM.Gameplay.Systems.ActivateVBloodAbilitySystem (ComponentSystemBase)
         ProjectM.TickerSystem (ComponentSystemBase)
         ProjectM.Scripting.TriggerSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.CreateGameplayEventOnBuffReapplySystem (ComponentSystemBase)
         ProjectM.ResetBuffEventSystem_Server (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.WeaponCoating.WeaponCoatingSystem (ISystem)
         ProjectM.Terrain.UpdateWaypointRegionSystem (ComponentSystemBase)
         ProjectM.MoveAllItemsBetweenInventoriesV2System (ComponentSystemBase)
@@ -353,10 +367,10 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.Pathfinding.PathRequestDestroySystem (ComponentSystemBase)
         ProjectM.ForgeSystem_Update (ComponentSystemBase)
         ProjectM.UI.ReviveCancelEventSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.DropItemThrowSystem (ComponentSystemBase)
         ProjectM.PlayerCombatBuffSystem_Reapplication (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.ToggleInvulnerableAdminEventSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.BloodLossPerSecondSystem (ISystem)
         ProjectM.Hybrid.HybridAttachPointTransformSystem (ComponentSystemBase)
@@ -369,69 +383,69 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.RevealMapSystem (ComponentSystemBase)
         ProjectM.HandleRecommendedSpawnLocationRequestEventSystem (ComponentSystemBase)
         ProjectM.GetTerritoryOwnerRequestSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.EquipServantItemSystem (ComponentSystemBase)
         ProjectM.UpdateRefiningSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.UseCastleHeartSystem (ComponentSystemBase)
         ProjectM.CastleBuilding.Placement.GetPlacementResultAsyncSystem (ComponentSystemBase)
         ProjectM.FusionForgeSystem_Update (ComponentSystemBase)
         ProjectM.Gameplay.Systems.OpenDoorSystem (ComponentSystemBase)
         ProjectM.ProfessorCoilSystem_Server_Update (ISystem)
-        <unknown system>
-        ProjectM.ReactToContestEventGroup (ComponentSystemGroup) - 7 children
+        <unknown system type>
+        ProjectM.ReactToContestEventGroup (ComponentSystemGroup) | 7 children
             ProjectM.Contest.ContestTriggerEvent_System (ISystem)
             ProjectM.StunAnalyticsSystem_Server+StunAnalyticsSystem_Server_ContestEventHandlers (ComponentSystemBase)
             ProjectM.Contest.Duel.DuelEventListenerSystem (ISystem)
             ProjectM.Contest.Arena.CastleArenaStartingEventSystem (ISystem)
             ProjectM.Contest.Arena.CastleArenaDefeatedEventSystem (ISystem)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
         ProjectM.Contest.Arena.CastleArenaObserveUpdateSystem (ISystem)
         ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.RemoveUserRemovableBuffEventSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.UsePortalSystem (ComponentSystemBase)
         ProjectM.TeleportationRequestSystem (ComponentSystemBase)
         ProjectM.VariousMigratedDebugEventsSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.RespawnAiEventSystem (ComponentSystemBase)
         ProjectM.ToggleUserPermissionsSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.Systems.UserDistanceTravelledSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.LifeTimeSystem (ISystem)
         ProjectM.Gameplay.Systems.DestroyOnSpawnSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Shared.Systems.ServantInfoEventSystem_Server (ComponentSystemBase)
         ProjectM.TravelToTargetSystem (ComponentSystemBase)
         ProjectM.RemovePvPSafeBuffOnCastleEntrySystem (ISystem)
         ProjectM.BecomeObserverSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.ElevateUserSystem (ComponentSystemBase)
         ProjectM.JumpFromCliffsTriggerSystem (ISystem)
         ProjectM.SpellMovementSystem_Update (ComponentSystemBase)
-        ProjectM.MoveGroup (ComponentSystemGroup) - 7 children
-            ProjectM.AbilityMoveGroup (ComponentSystemGroup) - 6 children
-                <unknown system>
-                <unknown system>
+        ProjectM.MoveGroup (ComponentSystemGroup) | 7 children
+            ProjectM.AbilityMoveGroup (ComponentSystemGroup) | 6 children
+                <unknown system type>
+                <unknown system type>
                 ProjectM.AbilityModifyMovementDuringCastSystem_Shared (ISystem)
                 ProjectM.AbilityRotateTowardAimDuringCastSystem_Shared (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.AbilityMoveStop_Shared (ComponentSystemBase)
             ProjectM.MoveWithCurveSystem (ISystem)
             ProjectM.AiDynamicCollisionSystem (ISystem)
-            ProjectM.PlayCommandSystemGroup (ComponentSystemGroup) - 3 children
+            ProjectM.PlayCommandSystemGroup (ComponentSystemGroup) | 3 children
                 ProjectM.Network.CommandUtility+InputCommandAbilityStateHistorySystem_Server (ComponentSystemBase)
                 ProjectM.Network.PlayCommandsSystem_Server (ISystem)
                 Network.Systems.TeleportIncorrectPositionSystem (ComponentSystemBase)
             ProjectM.JumpFromCliffsTravelSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.MoveEntitySystem (ISystem)
         ProjectM.ProjectileSystem (ComponentSystemBase)
         ProjectM.SleepInsideSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.MountSystem_Shared (ComponentSystemBase)
         ProjectM.MapCollisionSystem (ISystem)
         ProjectM.HeightCorrectionSystem (ComponentSystemBase)
@@ -444,42 +458,42 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.GallopBuffSystem_Server (ComponentSystemBase)
         ProjectM.GetServerTimeInfoEventSystem (ComponentSystemBase)
         ProjectM.Gameplay.Clan.UpdateClanStatusSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
         ProjectM.Gameplay.KnockbackSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.DestroyOnOwnerDeathSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
         ProjectM.Gameplay.Systems.UpdateCharacterCraftingSystem (ComponentSystemBase)
-        ProjectM.Gameplay.WarEvents.WarEventUpdateGroup (ComponentSystemGroup) - 6 children
+        ProjectM.Gameplay.WarEvents.WarEventUpdateGroup (ComponentSystemGroup) | 6 children
             ProjectM.Gameplay.WarEvents.WarEventRegistrySystem (ComponentSystemBase)
             ProjectM.Gameplay.WarEvents.WarEventDebugSystem (ComponentSystemBase)
             ProjectM.Gameplay.WarEvents.WarEventSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-        ProjectM.ReactToUnitStatChangedEventGroup (ComponentSystemGroup) - 2 children
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+        ProjectM.ReactToUnitStatChangedEventGroup (ComponentSystemGroup) | 2 children
             ProjectM.ModifyUnitStatBloodBuffSystem_Event (ISystem)
-            <unknown system>
-        ProjectM.ReactToEquipmentChangedEventGroup (ComponentSystemGroup) - 3 children
+            <unknown system type>
+        ProjectM.ReactToEquipmentChangedEventGroup (ComponentSystemGroup) | 3 children
             ProjectM.EquipmentSystem (ISystem)
-            <unknown system>
-            <unknown system>
-        ProjectM.ReactToEntityHitConsumedGroup (ComponentSystemGroup) - 2 children
+            <unknown system type>
+            <unknown system type>
+        ProjectM.ReactToEntityHitConsumedGroup (ComponentSystemGroup) | 2 children
             ProjectM.Gameplay.Systems.CreateGameplayEventOnOwnerSpellHitConsumedSystem (ComponentSystemBase)
-            <unknown system>
-        <unknown system>
-        ProjectM.ReactToInventoryChangedEventGroup (ComponentSystemGroup) - 9 children
-            <unknown system>
+            <unknown system type>
+        <unknown system type>
+        ProjectM.ReactToInventoryChangedEventGroup (ComponentSystemGroup) | 9 children
+            <unknown system type>
             ProjectM.OnJewelEquippedSystem_Server (ComponentSystemBase)
             ProjectM.Gameplay.Systems.BuffByItemCategoryCountSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
             ProjectM.RemoveJewelChangedSystem_Server (ComponentSystemBase)
             ProjectM.ReactToInventoryChangedSystem (ComponentSystemBase)
-    ProjectM.LateUpdateGroup (ComponentSystemGroup) - 14 children
+    ProjectM.LateUpdateGroup (ComponentSystemGroup) | 14 children
         ProjectM.PlaceTileModelSystem (ComponentSystemBase)
         ProjectM.LightningStorm.LightningStormRegionSystem (ISystem)
         ProjectM.ItemPositionUpdater (ISystem)
@@ -487,63 +501,63 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.Behaviours.LogErroneousBehaviourTreeNodeSystem (ComponentSystemBase)
         ProjectM.CastleBuilding.CastleBuildingAttachmentAddedEventsClearSystem (ComponentSystemBase)
         ProjectM.BloodMoonSystem (ISystem)
-        <unknown system>
-        <unknown system>
+        <unknown system type>
+        <unknown system type>
         ProjectM.CastleBuilding.CastleBuildingAttachmentRemovedEventsClearSystem (ComponentSystemBase)
         ProjectM.Scripting.ScriptMapperFinalizeDependenciesSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.TakeDamageInSunSystem_Server (ISystem)
         ProjectM.Gameplay.Systems.CreateGameplayEventOnBehaviourStateChangedSystem (ComponentSystemBase)
     ProjectM.PostUpdateBarrier (ComponentSystemBase)
-    ProjectM.RecursiveGroup (ComponentSystemGroup) - 10 children
+    ProjectM.RecursiveGroup (ComponentSystemGroup) | 10 children
         ProjectM.DestroyBarrier (ComponentSystemBase)
-        ProjectM.DestroyGroup (ComponentSystemGroup) - 3 children
-            ProjectM.DestroyTagGroup (ComponentSystemGroup) - 4 children
+        ProjectM.DestroyGroup (ComponentSystemGroup) | 3 children
+            ProjectM.DestroyTagGroup (ComponentSystemGroup) | 4 children
                 ProjectM.SpawnChainTransitionSystem_PreDestroy (ComponentSystemBase)
                 ProjectM.Shared.Systems.DestroyWhenSequenceIsDestroyedSystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.DestroyDeadSystem (ComponentSystemBase)
-                <unknown system>
-            ProjectM.ReactToDestroyTagGroup (ComponentSystemGroup) - 103 children
+                <unknown system type>
+            ProjectM.ReactToDestroyTagGroup (ComponentSystemGroup) | 103 children
                 ProjectM.UpdateBuffsBuffer_Destroy (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.HitCastColliderSystem_OnDestroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.BloodConsumeBuffDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.Destroy_TravelBuffSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.ReplaceAbilityOnSlotWhenMountedBuffSystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.CastleSharedInventorySystem_Destroy (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Shared.Systems.DestroySequenceWhenSelfIsDestroyedSystem (ComponentSystemBase)
                 ProjectM.Shared.Systems.ScriptDestroyServer (ComponentSystemBase)
                 ProjectM.MoveTowardsRotationSystem_Destroy (ComponentSystemBase)
                 ProjectM.DestroySpawnChainChildrenOnDestroySystem (ComponentSystemBase)
                 ProjectM.JumpFromCliffsTravelDestroySystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferFinalizeSystem (ISystem)
                 ProjectM.CastleBuilding.DestroyRoofOnFloorDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.MountBuffDestroySystem_Shared (ComponentSystemBase)
                 ProjectM.DropItemThrowSystem_Destroy (ComponentSystemBase)
                 ProjectM.GallopBuffSystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.ServantReactToDestroySystem (ComponentSystemBase)
                 ProjectM.Gameplay.Destroy_KnockbackSystem (ComponentSystemBase)
                 ProjectM.CastleBuilding.CastleBuildingAttachmentCleanup (ComponentSystemBase)
@@ -554,71 +568,71 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
                 ProjectM.ChangeKnockbackResistanceDuringCast_OnDestroy (ComponentSystemBase)
                 ProjectM.SpawnPrefabOnDestroySystem (ComponentSystemBase)
                 ProjectM.AbilityDisableHeightCorrectionSystem_OnDestroy (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.UnitSpawnerOnDestroySystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryOnDestroySystem (ComponentSystemBase)
                 ProjectM.DropInventorySystem (ComponentSystemBase)
                 ProjectM.TravelBuffDeregisterSystem (ComponentSystemBase)
                 ProjectM.RandomizedSpawnChainDestroySystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.AdditionalInteractBuffComponentDestroySystem (ComponentSystemBase)
                 ProjectM.InsideBuffDestroySystem_Shared (ComponentSystemBase)
                 ProjectM.HasResidentBuffDestroySystem_Shared (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.SpawnRegionOnDestroySystem (ComponentSystemBase)
                 ProjectM.SpawnChainDestroyedChildTransitionsSystem (ComponentSystemBase)
                 ProjectM.Network.ReturnNetworkIdSystem_Server_MegaStatics (ComponentSystemBase)
                 ProjectM.Destroy_SetOwnerRotateTowardsMovementSystem (ComponentSystemBase)
                 ProjectM.Destroy_MoveSpeedBuffSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.Contest.ContestSystem_Destroy (ISystem)
                 ProjectM.CastleBuilding.CastleHasItemsOnDestroySystem (ComponentSystemBase)
                 ProjectM.Gameplay.InventoryRouteDestroySystem (ISystem)
                 ProjectM.RemoveDestroyedEntityFromSpawnRegionSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.UnitMountDestroySystem (ComponentSystemBase)
                 ProjectM.Destroy_BuffModificationsSystem_Server (ComponentSystemBase)
                 ProjectM.ModifyBloodDrainSystem_Destroy (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.CastleDecrementCountOnDestroySystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.ModifyTeamBuffSystem_Destroy (ComponentSystemBase)
                 ProjectM.RelicDestroySystem (ComponentSystemBase)
                 ProjectM.UnitCompositionSpawnerDestroyTagChildrenSystem (ComponentSystemBase)
                 ProjectM.Destroy_SetOwnerRotateTowardsMouseSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.BagEquipTagSystem_Destroy (ComponentSystemBase)
                 ProjectM.Destroy_KnockbackResistanceBuff (ComponentSystemBase)
                 ProjectM.ProfessorCoilSystem_Server_Destroy (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.CreateGameplayEventOnDestroySystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.SoulShardBuffDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.UnitMounterDestroySystem (ComponentSystemBase)
                 ProjectM.AllowJumpFromCliffsBuffDestroySystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.CastleHeartClearRaidStateSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.Network.StoreDestroyedEntitiesSystem (ISystem)
                 ProjectM.Destroy_ServerControlsPositionSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
             ProjectM.DetachSystem (ComponentSystemBase)
-        ProjectM.BeforeSpawnGroup (ComponentSystemGroup) - 2 children
+        ProjectM.BeforeSpawnGroup (ComponentSystemGroup) | 2 children
             ProjectM.Gameplay.KnockbackEventSystem (ComponentSystemBase)
             ProjectM.SpawnChainTransitionSystem_PreSpawn (ComponentSystemBase)
         ProjectM.SpawnBarrier (ComponentSystemBase)
-        ProjectM.SpawnGroup (ComponentSystemGroup) - 5 children
+        ProjectM.SpawnGroup (ComponentSystemGroup) | 5 children
             ProjectM.SpawnTagDebugSystem (ComponentSystemBase)
-            ProjectM.ReactToSpawnGroup (ComponentSystemGroup) - 129 children
+            ProjectM.ReactToSpawnGroup (ComponentSystemGroup) | 129 children
                 ProjectM.SpawnCastleTeamSystem (ComponentSystemBase)
                 ProjectM.CastleTeamConnectionSystem (ComponentSystemBase)
-                ProjectM.SetupInitialStatesGroup (ComponentSystemGroup) - 3 children
-                    ProjectM.SetupInitialStatesGroup_Step1 (ComponentSystemGroup) - 15 children
+                ProjectM.SetupInitialStatesGroup (ComponentSystemGroup) | 3 children
+                    ProjectM.SetupInitialStatesGroup_Step1 (ComponentSystemGroup) | 15 children
                         ProjectM.Gameplay.Systems.GetOwnerFactionOnSpawnSystem (ComponentSystemBase)
                         ProjectM.Gameplay.Systems.GetOwnerTeamOnSpawnSystem (ComponentSystemBase)
                         ProjectM.CopySpellmodFromAbilitySystem (ComponentSystemBase)
@@ -631,30 +645,30 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
                         ProjectM.Gameplay.Systems.GetOwnerRotationOnSpawnSystem (ComponentSystemBase)
                         ProjectM.Gameplay.Systems.OffsetTranslationOnSpawnWithBlockerSystem (ISystem)
                         ProjectM.Gameplay.Systems.OffsetTranslationOnSpawnSystem (ComponentSystemBase)
-                        <unknown system>
+                        <unknown system type>
                         ProjectM.ResetCreateGameplayEventOnTickOnStacksChangedSystem (ComponentSystemBase)
                         ProjectM.StackModifierSystem (ComponentSystemBase)
-                    ProjectM.SetupInitialStatesGroup_Step2 (ComponentSystemGroup) - 8 children
+                    ProjectM.SetupInitialStatesGroup_Step2 (ComponentSystemGroup) | 8 children
                         ProjectM.ReplaceDropTablesByChunkSystem (ComponentSystemBase)
                         ProjectM.Spawn_TravelBuffSystem (ComponentSystemBase)
                         ProjectM.ProjectileSystem_Spawn_Server (ISystem)
-                        <unknown system>
+                        <unknown system type>
                         ProjectM.RandomizedSpawnChainSpawnSystem (ComponentSystemBase)
                         ProjectM.Spawn_MoveSpeedBuffSystem (ComponentSystemBase)
                         ProjectM.Gameplay.Spawn_DashSystem (ComponentSystemBase)
-                        <unknown system>
+                        <unknown system type>
                     ProjectM.BloodShareBuffSpawn_Server (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.JumpFromCliffsTravelSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.ArmorLevelSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.CastleHasItemsOnSpawnSystem (ComponentSystemBase)
                 ProjectM.CastleBuilding.CastleIncrementCountOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.BuffSystem_Spawn_Server (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.DownedEventSystem (ComponentSystemBase)
                 ProjectM.JewelSpawnSystem (ComponentSystemBase)
@@ -665,64 +679,64 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
                 ProjectM.Gameplay.Systems.DisconnectSettingsSystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.SoulShardBuffSpawnSystem (ComponentSystemBase)
                 ProjectM.MountStatsSpawnSystem_Server (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.TravelBuffRegisterSystem (ComponentSystemBase)
                 ProjectM.HybridModelSeed_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Terrain.TerritoryManagerSpawnSystem (ComponentSystemBase)
                 ProjectM.InitializeAchievementDataSystem (ComponentSystemBase)
                 ProjectM.Network.SetupNetworkIdSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.UnitMounterSpawnSystem (ComponentSystemBase)
                 ProjectM.GallopBuffSystem_Spawn (ComponentSystemBase)
                 ProjectM.MountBuffSpawnSystem_Server (ComponentSystemBase)
                 ProjectM.ScaleWithBloodEfficiencySystem (ComponentSystemBase)
                 ProjectM.SpellMovementSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.ModifyTeamBuffSystem_Spawn (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.CreateGameplayEventOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Shared.Systems.SpawnTransformSystem_OnSpawn (ComponentSystemBase)
                 ProjectM.BuffDebugSystem (ComponentSystemBase)
                 ProjectM.SpawnTeamSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Shared.Systems.StaticTransformUpdateSystem_ReactToSpawn_Server (ComponentSystemBase)
                 ProjectM.InitializeYieldResourcesSystem (ComponentSystemBase)
                 ProjectM.Shared.Systems.RegisterSpawnedChunkObjectsSystem_ReactToSpawn (ComponentSystemBase)
                 ProjectM.Create_ServerControlsPositionSystem (ComponentSystemBase)
                 ProjectM.TravelToTargetSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.ItemPickupSystem (ComponentSystemBase)
                 ProjectM.Behaviours.RegisterEntityInBlackboardSystem (ComponentSystemBase)
                 ProjectM.InitializeNewSpawnChainSystem (ComponentSystemBase)
                 ProjectM.LinkMinionToOwnerOnSpawnSystem (ComponentSystemBase)
                 ProjectM.InstantiateMapIconsSystem_Spawn (ComponentSystemBase)
                 ProjectM.SalvagestationSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.LegDirectionSystem_Spawn (ComponentSystemBase)
                 ProjectM.Shared.Systems.AnnounceSiegeWeaponSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.InitializeExternalInventoriesSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.DropInInventoryOnSpawnSystem (ComponentSystemBase)
                 ProjectM.Behaviours.BehaviourTreeStateBuffsSystem_RegisterAndDestroy (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Behaviours.SetPreCombatPositionSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.UI.VbloodTrackingMenu_ConvertVbloodsOnDemandSystem (ComponentSystemBase)
                 ProjectM.Sequencer.SpawnSequenceForEntitySystem_Server (ComponentSystemBase)
                 ProjectM.RespawnPointSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Apply_BuffModificationsSystem_Server (ComponentSystemBase)
                 ProjectM.InsideInitSystem_Server (ComponentSystemBase)
                 ProjectM.BuffResistancesSpawnSystem (ComponentSystemBase)
                 ProjectM.AdditionalInteractBuffComponentSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.ApplyBuffOnSpawnSystem (ComponentSystemBase)
                 ProjectM.ModifyBloodDrainSystem_Spawn (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.CreateGameplayEventOnTickSystem_Spawn (ComponentSystemBase)
@@ -731,36 +745,36 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
                 ProjectM.FeedableInventorySystem_Spawn (ComponentSystemBase)
                 ProjectM.ReplaceAbilityOnSlotSystem (ComponentSystemBase)
                 ProjectM.MoveTowardsRotationSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.TeleportBuffSpawnSystem (ComponentSystemBase)
                 ProjectM.BagEquipTagSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.AllowJumpFromCliffsBuffSpawnSystem (ComponentSystemBase)
                 ProjectM.SetDynamicCollisionRadiusOverrideSystem (ComponentSystemBase)
                 ProjectM.MapIconSpawnSystem (ComponentSystemBase)
                 ProjectM.ProfessorCoilSystem_Server_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryOnSpawnSystem (ComponentSystemBase)
                 ProjectM.SpawnCastleHeartSystem (ComponentSystemBase)
                 ProjectM.BehaviourTreeBindingSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.RandomLifeTimeSystem_Spawn (ComponentSystemBase)
                 ProjectM.UnitSpawnerReactSystem (ComponentSystemBase)
                 ProjectM.CastleSharedInventorySystem_Spawn (ComponentSystemBase)
                 ProjectM.TheMonsterGeneratorBuffSystem_Spawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.CastleBuilding.Teleporters.CastleTeleporterConnectSystem (ComponentSystemBase)
                 ProjectM.TargetAOESystem (ComponentSystemBase)
                 ProjectM.Shared.Systems.ScriptSpawnServer (ComponentSystemBase)
                 ProjectM.Shared.Systems.CreatedTimeSpawnSystem (ComponentSystemBase)
                 ProjectM.UnitMountSpawnSystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.WeaponLevelSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
+                <unknown system type>
+                <unknown system type>
                 ProjectM.TraderSpawnSystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.HitCastColliderSystem_OnSpawn (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.TagDraculaSpawnChainsSystem (ComponentSystemBase)
                 ProjectM.DestroyWhenNoCharacterNearbyAfterDurationSystem_Spawn (ComponentSystemBase)
                 ProjectM.SpawnAbilityGroupSlotsSystem (ComponentSystemBase)
@@ -769,13 +783,13 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
                 ProjectM.HeightCorrectionSpawnSystem (ComponentSystemBase)
                 ProjectM.Scripting.OnSpawnedSystem (ComponentSystemBase)
                 ProjectM.SetTeamOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
             ProjectM.AttachSystem_Spawn (ComponentSystemBase)
             ProjectM.Network.NetworkedCreateTimeSystem (ComponentSystemBase)
             ProjectM.WeaponCoating.ApplyStoredWeaponCoatingOnSpawnSystem (ComponentSystemBase)
         ProjectM.Gameplay.Systems.HitCastColliderProcessSystem_Recursive (ComponentSystemBase)
         ProjectM.Gameplay.Systems.HandleGameplayEventsRecursiveSystem (ComponentSystemBase)
-        ProjectM.StatChangeGroup (ComponentSystemGroup) - 16 children
+        ProjectM.StatChangeGroup (ComponentSystemGroup) | 16 children
             ProjectM.Gameplay.Systems.DealDamageSystem (ISystem)
             ProjectM.Gameplay.Systems.CreateGameplayEventOnDistanceReachedSystem (ComponentSystemBase)
             ProjectM.Gameplay.Systems.StatChangeMutationSystem (ComponentSystemBase)
@@ -786,20 +800,20 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
             ProjectM.Gameplay.Systems.KillAndDisableInactivePlayerAfterDuration (ComponentSystemBase)
             ProjectM.RepairItemSystem (ComponentSystemBase)
             ProjectM.ModifyCooldownRecoveryRateSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
             ProjectM.ModifyInventorySizeEventSystem (ComponentSystemBase)
             ProjectM.DestroyBuffOnMoveSystem (ComponentSystemBase)
             ProjectM.Gameplay.Systems.StatChangeSystem (ComponentSystemBase)
             ProjectM.Gameplay.Systems.CreateGameplayEventsOnDamageTakenSystem (ComponentSystemBase)
-        ProjectM.ReactToDeadGroup (ComponentSystemGroup) - 18 children
-            <unknown system>
-            <unknown system>
+        ProjectM.ReactToDeadGroup (ComponentSystemGroup) | 18 children
+            <unknown system type>
+            <unknown system type>
             ProjectM.DeathEventListenerSystem (ComponentSystemBase)
             ProjectM.Cleanup_BuffModificationsSystem_Server (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.YieldResourcesSystem_Dead (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.DestroyBuffsWithDeadTargetsOrOwnersSystem (ComponentSystemBase)
             ProjectM.CastleBuilding.CastleBuildingDeadCleanup (ComponentSystemBase)
             ProjectM.Gameplay.Systems.OnDeathSystem (ComponentSystemBase)
@@ -811,75 +825,75 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
             ProjectM.KillMinionsOnMasterDeathSystem (ComponentSystemBase)
             ProjectM.UserKillServerEventSystem (ComponentSystemBase)
             ProjectM.DestroyDeathEventSystem (ComponentSystemBase)
-        ProjectM.NonRecursiveGroup (ComponentSystemGroup) - 1 children
-            ProjectM.AbilityGroup (ComponentSystemGroup) - 11 children
-                ProjectM.AbilityInitializeGroup (ComponentSystemGroup) - 2 children
+        ProjectM.NonRecursiveGroup (ComponentSystemGroup) | 1 children
+            ProjectM.AbilityGroup (ComponentSystemGroup) | 11 children
+                ProjectM.AbilityInitializeGroup (ComponentSystemGroup) | 2 children
                     ProjectM.Gameplay.ValidateAbilityGroupsSystem (ComponentSystemBase)
                     ProjectM.AbilityStartCastingSystem_Server (ISystem)
                 ProjectM.Update_ReplaceAbilityOnSlotSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.VerifyingDismantleAbilitySystem (ComponentSystemBase)
                 ProjectM.VerifyingRepairAbilitySystem (ComponentSystemBase)
                 ProjectM.Gameplay.Systems.GetOwnerRotationSystem (ComponentSystemBase)
-                <unknown system>
+                <unknown system type>
                 ProjectM.Gameplay.Systems.CreateGameplayEvents_OnAbilityCast (ComponentSystemBase)
-                ProjectM.AbilityReactToCastStartGroup (ComponentSystemGroup) - 2 children
+                ProjectM.AbilityReactToCastStartGroup (ComponentSystemGroup) | 2 children
                     ProjectM.AbilityCastStarted_SpawnPrefabSystem_Server (ComponentSystemBase)
                     ProjectM.AbilityCastStarted_SetupAbilityTargetSystem_Shared (ComponentSystemBase)
-                ProjectM.AbilityReactDuringCastGroup (ComponentSystemGroup) - 5 children
+                ProjectM.AbilityReactDuringCastGroup (ComponentSystemGroup) | 5 children
                     ProjectM.AbilityCooldownSystems (ISystem)
                     ProjectM.ResetCreateGameplayEventOnTickWhenCastingSystem (ComponentSystemBase)
                     ProjectM.ChangeKnockbackResistanceDuringCast_Shared (ComponentSystemBase)
                     ProjectM.AbilityDisableHeightCorrectionSystem_Shared (ComponentSystemBase)
                     ProjectM.DestroyEntityOnAbilityEndedSystem (ComponentSystemBase)
-                ProjectM.AbilityReactToCastFinishGroup (ComponentSystemGroup) - 3 children
+                ProjectM.AbilityReactToCastFinishGroup (ComponentSystemGroup) | 3 children
                     Gameplay.Systems.Ability.AbilityFreeCastSystem (ISystem)
                     ProjectM.AbilityRunScriptsSystem (ComponentSystemBase)
                     Gameplay.Systems.Ability.AbilityStorePowerSystem (ISystem)
-    ProjectM.AfterRecursiveSpawnDestroyGroup (ComponentSystemGroup) - 4 children
+    ProjectM.AfterRecursiveSpawnDestroyGroup (ComponentSystemGroup) | 4 children
         ProjectM.CreatedDelayedDestroyEventSystem (ISystem)
         ProjectM.AfterRecursiveSpawnDestroyBarrier (ComponentSystemBase)
         ProjectM.BlinkSystems_Server (ComponentSystemBase)
-        <unknown system>
-    ProjectM.BeforeTransformSystemGroup (ComponentSystemGroup) - 4 children
-        <unknown system>
+        <unknown system type>
+    ProjectM.BeforeTransformSystemGroup (ComponentSystemGroup) | 4 children
+        <unknown system type>
         ProjectM.UserControllerDataCopySystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.UserTranslationCopySystem (ComponentSystemBase)
-    ProjectM.TransformGroup (ComponentSystemGroup) - 1 children
-        Unity.Transforms.TransformSystemGroup (ComponentSystemGroup) - 4 children
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-    ProjectM.ReactToTransformGroup (ComponentSystemGroup) - 17 children
-        <unknown system>
-        <unknown system>
+    ProjectM.TransformGroup (ComponentSystemGroup) | 1 children
+        Unity.Transforms.TransformSystemGroup (ComponentSystemGroup) | 4 children
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+    ProjectM.ReactToTransformGroup (ComponentSystemGroup) | 17 children
+        <unknown system type>
+        <unknown system type>
         ProjectM.Network.NetworkInterpolationSystem_Server (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.TravelBuffUpdateLastTranslationSystem (ComponentSystemBase)
         ProjectM.Terrain.WorldLoadingManagerSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.UpdateTilePositionSystem (ISystem)
-        ProjectM.ReactToTilePositionGroup (ComponentSystemGroup) - 12 children
-            <unknown system>
-            <unknown system>
+        ProjectM.ReactToTilePositionGroup (ComponentSystemGroup) | 12 children
+            <unknown system type>
+            <unknown system type>
             ProjectM.DirtyTileBoundsManager (ISystem)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
             ProjectM.CastleBuilding.TileModelEventsBarrier (ComponentSystemBase)
             ProjectM.CastleBuilding.CastleBlockSystem (ComponentSystemBase)
             ProjectM.Tiles.TileWorldSystem (ISystem)
-        ProjectM.ReactToTileBoundsGroup (ComponentSystemGroup) - 10 children
+        ProjectM.ReactToTileBoundsGroup (ComponentSystemGroup) | 10 children
             ProjectM.Tiles.TileModelSpatialLookupSystem (ISystem)
             ProjectM.CastleBuilding.CastleEventsOnChunkLoadedSystem (ComponentSystemBase)
             ProjectM.CastleBuilding.CastleFloorAndWallsUpdateSystem (ComponentSystemBase)
             ProjectM.CastleBuilding.CastleBuildingClearRoomEventsSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.CastleBuilding.RoomRoofUpdateSystem (ComponentSystemBase)
             ProjectM.CastleBuilding.CastleBuildingWorkstationsSystem (ComponentSystemBase)
             ProjectM.UpdateTileCellsSystem_Server (ComponentSystemBase)
@@ -889,993 +903,71 @@ Unity.Entities.TimeableComponentSystemGroup (ComponentSystemGroup) - 44 children
         ProjectM.CastleBuilding.DisableShowOnlyInPreviewSystem_Server (ComponentSystemBase)
         ProjectM.ShowSunDamageRaysSystem (ComponentSystemBase)
         ProjectM.Shared.Systems.SpawnTransformSystem_OnReactToTransform (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Gameplay.DashUpdateLastTranslationSystem (ComponentSystemBase)
         ProjectM.TileModelSetRegisteredState (ISystem)
-    ProjectM.BeforeSerializeBarrierGroup (ComponentSystemGroup) - 7 children
+    ProjectM.BeforeSerializeBarrierGroup (ComponentSystemGroup) | 7 children
         ProjectM.Network.UserActivityGridSystem (ComponentSystemBase)
         ProjectM.Network.SerializeAndSendServerEventsSystem (ComponentSystemBase)
         ProjectM.Network.SpellModSyncSystem_Server (ComponentSystemBase)
         ProjectM.CastleBuilding.Systems.AssetSwapFloorUpdateSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.CastleBuilding.Systems.AssetSwappingSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
     ProjectM.StunlockEntityCommandBufferSystem (ComponentSystemBase)
-    <unknown system>
-    ProjectM.CollisionGroup (ComponentSystemGroup) - 1 children
-        Unity.Entities.FixedStepSimulationSystemGroup (ComponentSystemGroup) - 5 children
+    <unknown system type>
+    ProjectM.CollisionGroup (ComponentSystemGroup) | 1 children
+        Unity.Entities.FixedStepSimulationSystemGroup (ComponentSystemGroup) | 5 children
             ProjectM.DestroyInFixed (ISystem)
             Unity.Entities.BeginFixedStepSimulationEntityCommandBufferSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             Unity.Physics.Systems.BuildStaticPhysicsWorld (ISystem)
             Unity.Entities.EndFixedStepSimulationEntityCommandBufferSystem (ComponentSystemBase)
-    ProjectM.SerializeGroup (ComponentSystemGroup) - 15 children
+    ProjectM.SerializeGroup (ComponentSystemGroup) | 15 children
         ProjectM.Network.SetupNetworkIdSystem_PreSerialize (ComponentSystemBase)
         ProjectM.Network.UpdateSnapshotsSystem (ComponentSystemBase)
         ProjectM.Network.SetSnapshotOnDestroyedEntitiesSystem (ComponentSystemBase)
         ProjectM.Network.PacketBookkeeperSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.Shared.RelicBoundMapIcon_SyncSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.Shared.WarEventNetworkingSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.SyncMapIconsSystem (ISystem)
         ProjectM.Network.PrioritizeSystem (ISystem)
         ProjectM.Network.MakePacketSystem (ISystem)
         ProjectM.Network.SendPacketSystem (ComponentSystemBase)
         ProjectM.Network.NetworkProfilerSystem (ComponentSystemBase)
-        ProjectM.AfterSerializeGroup (ComponentSystemGroup) - 0 children
-    ProjectM.FinalizeGroup_Server (ComponentSystemGroup) - 2 children
+        ProjectM.AfterSerializeGroup (ComponentSystemGroup) | 0 children
+    ProjectM.FinalizeGroup_Server (ComponentSystemGroup) | 2 children
         ProjectM.Network.CommandUtility+ClearInputCommands (ComponentSystemBase)
         ProjectM.DisableWhenNoPlayersInRangeSystem_Server (ISystem)
-    Unity.Entities.LateSimulationSystemGroup (ComponentSystemGroup) - 0 children
+    Unity.Entities.LateSimulationSystemGroup (ComponentSystemGroup) | 0 children
     Unity.Entities.EndSimulationEntityCommandBufferSystem (ComponentSystemBase)
-    ProjectM.SetupSyncedServerDebugSettingsForWorld_SimulationSystemGroup (ComponentSystemBase)
-    Unity.Entities.BeginSimulationEntityCommandBufferSystem (ComponentSystemBase)
-    ProjectM.BeforeStartSimulationGroupBarrier (ComponentSystemBase)
-    ProjectM.StartSimulationGroup (ComponentSystemGroup) - 8 children
-        <unknown system>
-        ProjectM.DestroyEntitiesBarrier_Server (ComponentSystemBase)
-        ProjectM.DestroyGroup_Server (ComponentSystemGroup) - 2 children
-            ProjectM.Network.ReturnNetworkIdSystem_Server (ComponentSystemBase)
-            <unknown system>
-        ProjectM.StartSimulationGroupBarrier (ComponentSystemBase)
-        ProjectM.AfterDestroyGroup_Server (ComponentSystemGroup) - 2 children
-            ProjectM.TriggerPersistenceSaveSystem (ComponentSystemBase)
-            ProjectM.PersistenceGroup (ComponentSystemGroup) - 2 children
-                ProjectM.SerializePersistenceSystemV2 (ComponentSystemBase)
-                ProjectM.TestSerializedPersistenceSystem (ComponentSystemBase)
-        ProjectM.Network.CommandUtility+TileCollisionHistorySystem_Base (ComponentSystemBase)
-        ProjectM.StartSimulationNetworkGroup (ComponentSystemGroup) - 6 children
-            ProjectM.ServerBootstrapSystem (ComponentSystemBase)
-            ProjectM.PlatformUserBlockSystem_Server (ComponentSystemBase)
-            ProjectM.UI.UserConnectionChangedEventSystem (ComponentSystemBase)
-            ProjectM.ServerWebAPISystem (ComponentSystemBase)
-            ProjectM.UserContentLockSystem (ComponentSystemBase)
-            ProjectM.DebugEventsSystem (ComponentSystemBase)
-        ProjectM.DeserializeGroup (ComponentSystemGroup) - 4 children
-            ProjectM.DeserializeComponentsGroup (ComponentSystemGroup) - 0 children
-            ProjectM.ReactToDeserializeGroup (ComponentSystemGroup) - 1 children
-                ProjectM.ReactToDeserializedDebugSettingsSystem_Server (ComponentSystemBase)
-            <unknown system>
-            ProjectM.Network.UpdateEntityInput_Server (ComponentSystemBase)
-    CleanupDestroyPreventionSystem (ComponentSystemBase)
-    ProjectM.EarlyUpdateGroup (ComponentSystemGroup) - 4 children
-        ProjectM.ActuallyDisableSystem (ComponentSystemBase)
-        ProjectM.Behaviours.DisableNpcsSystem (ComponentSystemBase)
-        ProjectM.Scripting.ScriptMapperPrepareDependenciesSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.ApplyPlacementHistorySystem (ISystem)
-    ProjectM.UpdateGroup (ComponentSystemGroup) - 330 children
-        <unknown system>
-        Unity.Entities.SystemBase (ComponentSystemBase)
-        ProjectM.TravelBuffSystem (ISystem)
-        ProjectM.WorkstationUnassignInvalidServantsSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.MountSystem_Server (ComponentSystemBase)
-        ProjectM.ForceJoinClanEventSystem_Server (ComponentSystemBase)
-        ProjectM.StablesSystem_MountItemGain (ComponentSystemBase)
-        ProjectM.MorganaWorshipperSystem (ISystem)
-        <unknown system>
-        ProjectM.ToggleSalvagestationSystem (ComponentSystemBase)
-        ProjectM.ShareUnitRecipeSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.TraderPurchaseSystem (ComponentSystemBase)
-        ProjectM.ShareRefinementSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Gameplay.Systems.ActivateDraculaWarpRiftSystem (ComponentSystemBase)
-        ProjectM.UpdateMicroPOIManagerSystem (ComponentSystemBase)
-        ProjectM.DefaultActionsSystem (ComponentSystemBase)
-        ProjectM.Contest.Arena.ArenaHealthOrbSystem (ISystem)
-        ProjectM.Gameplay.Systems.DestroyWhenDisabledSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CreateGameplayEventOnTickSystem (ComponentSystemBase)
-        ProjectM.UnEquipServantItemSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.Systems.CastleRailingsSystem (ComponentSystemBase)
-        ProjectM.VbloodGhostBuffSystem_Server (ComponentSystemBase)
-        ProjectM.GetVBloodPositionsSystem (ComponentSystemBase)
-        ProjectM.InteractWithPrisonerSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.CharacterMenuOpenedSystem_Server (ComponentSystemBase)
-        ProjectM.Apply_KnockbackResistanceBuff (ComponentSystemBase)
-        ProjectM.EquipSaddleSystem (ComponentSystemBase)
-        ProjectM.BonfireSystemUpdateCloud (ComponentSystemBase)
-        ProjectM.GetUserStatsEventSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        <unknown system>
-        ProjectM.Gameplay.Systems.LeftFarbaneAchievementSystem (ComponentSystemBase)
-        ProjectM.RemoveLingeringServantMissionBuffsSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.PlayerTeleportSystem (ComponentSystemBase)
-        ProjectM.Gameplay.InventoryRouteSetAutoTransferEventSystem (ComponentSystemBase)
-        ProjectM.SetAdminOnlyDebugEventsSystem (ComponentSystemBase)
-        ProjectM.MusicPlayerStationSystem_UnlockTracksSystem (ComponentSystemBase)
-        ProjectM.VivoxConnectionSystem (ComponentSystemBase)
-        ProjectM.UnEquipItemSystem (ComponentSystemBase)
-        ProjectM.ToggleRefiningSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.SharedInventorySystem_Syncing (ComponentSystemBase)
-        <unknown system>
-        ProjectM.EquipItemSystem (ComponentSystemBase)
-        ProjectM.ImprisonedBuffSystem (ComponentSystemBase)
-        ProjectM.ServantCoffinstationActionSystem (ComponentSystemBase)
-        ProjectM.CompleteAchievementSystem (ComponentSystemBase)
-        ProjectM.DebugEventsSystem+Debug_SpawnBuffs (ComponentSystemBase)
-        <unknown system>
-        ProjectM.TeleportToWaypointEventSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.DropInventoryItemSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.IdleInteractionSystem_PointReached (ISystem)
-        <unknown system>
-        ProjectM.ServantSummonIfIdleOutsideTerritorySystem (ComponentSystemBase)
-        ProjectM.StablesSystem_ClientEvents (ComponentSystemBase)
-        ProjectM.ClaimAchievementSystem (ComponentSystemBase)
-        ProjectM.Shared.Systems.ServantMissionUpdateSystem (ComponentSystemBase)
-        ProjectM.Contest.Arena.CastleArenaFlagDebugEventSystem_Server (ISystem)
-        <unknown system>
-        ProjectM.UseConsumableSystem (ComponentSystemBase)
-        ProjectM.Modify_BuffModificationsSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.StartCharacterCraftingSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryNameUpdateSystem (ISystem)
-        ProjectM.RespecStationSystem (ComponentSystemBase)
-        ProjectM.TriggerWalkedIntoCompleteRoomSystem (ISystem)
-        ProjectM.Gameplay.InventoryRouteTransferEventSystem (ComponentSystemBase)
-        ProjectM.ServantCoffinstationUpdateSystem (ComponentSystemBase)
-        ProjectM.CollectChargedItemsSystem (ComponentSystemBase)
-        ProjectM.ToggleRefiningRecipeSystem (ComponentSystemBase)
-        ProjectM.SpawnChainElementsChangedEventSystem (ComponentSystemBase)
-        ProjectM.KickBanSystem_Server (ComponentSystemBase)
-        ProjectM.Contest.Arena.CastleArenaFlagBuffUpdateSystem_Server (ISystem)
-        ProjectM.AdminAuthSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.RespawnDelaySystem_Server (ComponentSystemBase)
-        ProjectM.HandleOpenVBloodMenuSystem (ComponentSystemBase)
-        ProjectM.SetOwnerRotateTowardsMouseSystem (ComponentSystemBase)
-        ProjectM.CustomizeCharacterSystem (ComponentSystemBase)
-        ProjectM.ServerShutdownSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.MoveItemBetweenInventoriesSystem (ComponentSystemBase)
-        ProjectM.CharacterSpawnGroup (ComponentSystemGroup) - 3 children
-            ProjectM.ReactToCharacterSpawnGroup (ComponentSystemGroup) - 1 children
-                ProjectM.Gameplay.Systems.ResetBloodOnRespawnSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.RemoveReactToCharacterSpawnTag (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.SpawnCharacterSystem (ComponentSystemBase)
-        ProjectM.Behaviours.SetPreCombatPositionSystem (ComponentSystemBase)
-        ProjectM.Shared.Systems.ServantMissionActionSystem (ComponentSystemBase)
-        ProjectM.JewelCraftingStartSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CombatMusicSystem_Server (ComponentSystemBase)
-        ProjectM.SortAllInventoriesSystem (ComponentSystemBase)
-        ProjectM.MusicPlayerStationSystem_Update (ComponentSystemBase)
-        ProjectM.EquipServantItemFromInventorySystem (ComponentSystemBase)
-        ProjectM.StartCraftingSystem (ComponentSystemBase)
-        ProjectM.SpellSchoolProgressionEventSystem (ComponentSystemBase)
-        ProjectM.GetOwnerPrimaryAggroTargetOnSpawnSystem (ComponentSystemBase)
-        ProjectM.TheMonsterGeneratorBuffSystem_Update (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.SendAlliedUserInfoOnChangedTeamEventSystem (ComponentSystemBase)
-        ProjectM.Gameplay.InventoryRouteEventSystem (ISystem)
-        ProjectM.BacktraceSystem (ComponentSystemBase)
-        ProjectM.UpdateModifyTeamBuffSystem (ComponentSystemBase)
-        ProjectM.PlayerMapZonesDiscoverySystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.SpellSchoolProgressionEventSystem_EquipPassives (ComponentSystemBase)
-        ProjectM.Gameplay.Scripting.RadialZoneSystem_Garlic_Server (ISystem)
-        ProjectM.FadeToBlackSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CastleHeartEventSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CastleHeartDetectRaidSystem (ComponentSystemBase)
-        ProjectM.EquipItemFromInventorySystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.StopCharacterCraftingSystem (ComponentSystemBase)
-        ProjectM.DiscoverResearchSystem (ComponentSystemBase)
-        ProjectM.ServantSpawnSetupSystem (ComponentSystemBase)
-        ProjectM.TraderSyncSystem (ComponentSystemBase)
-        ProjectM.UpdateCraftingSystem (ComponentSystemBase)
-        ProjectM.PlayerCombatBuffSystem_InitialApplication_Aggro (ISystem)
-        ProjectM.SubScenePrefabSpawnerSystem (ComponentSystemBase)
-        ProjectM.BindCoffinSystem (ComponentSystemBase)
-        ProjectM.Scripting.ScriptUpdateServer (ComponentSystemBase)
-        ProjectM.Shared.Systems.ScheduledFunctionSystem (ComponentSystemBase)
-        ProjectM.AiGroup (ComponentSystemGroup) - 16 children
-            <unknown system>
-            ProjectM.ReapplySpawnBuffOnResetSystem (ISystem)
-            ProjectM.Pathfinding.RoadPathfindingSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            ProjectM.AiPrioritizationSystem (ISystem)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            ProjectM.AggroSystem (ISystem)
-            ProjectM.Behaviours.BehaviourTreeSystem (ISystem)
-            ProjectM.AiMoveSystem_Server (ISystem)
-            ProjectM.RepairInverseAggroSystem (ISystem)
-            ProjectM.AiSubGroup1 (ComponentSystemGroup) - 1 children
-                ProjectM.Behaviours.EvaluateCastOptionsSystem (ComponentSystemBase)
-            ProjectM.Behaviours.BehaviourTreeParallelWriteSystem (ISystem)
-            ProjectM.AiSubGroup2 (ComponentSystemGroup) - 7 children
-                <unknown system>
-                <unknown system>
-                ProjectM.Behaviours.BehaviourTreeStateBuffsSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.KillAllMinionsEventSystem (ComponentSystemBase)
-                ProjectM.Pathfinding.PathfindingSystem_Metrics (ComponentSystemBase)
-                ProjectM.Pathfinding.PathfindingSystem (ComponentSystemBase)
-        ProjectM.InputGroup (ComponentSystemGroup) - 2 children
-            ProjectM.SetInputGroup (ComponentSystemGroup) - 3 children
-                ProjectM.MoveTowardsPositionSystem_Server_Update (ComponentSystemBase)
-                ProjectM.MoveTowardsPositionSystem_Shared_Update (ComponentSystemBase)
-                <unknown system>
-            ProjectM.MoveTowardsRotationSystem_Shared (ComponentSystemBase)
-        ProjectM.Scripting.GenericEventSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Clan.ClanSystem_Server (ComponentSystemBase)
-        ProjectM.SortSingleInventorySystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildCastleHeartSync (ISystem)
-        <unknown system>
-        ProjectM.ResetBuffAgeEventSystem_Server (ComponentSystemBase)
-        ProjectM.ShapeshiftSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.ForgeSystem_Events (ComponentSystemBase)
-        ProjectM.CastleBuilding.Placement.SetTerritoryWorldRegionSystem (ComponentSystemBase)
-        ProjectM.ServantPowerSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.EmoteSystem (ComponentSystemBase)
-        ProjectM.ModifyBloodDrainSystem_Update (ComponentSystemBase)
-        ProjectM.UpdateSalvageSystem (ComponentSystemBase)
-        ProjectM.IdleInteractionSystem_Update (ISystem)
-        ProjectM.CastleHeartSharedInventorySystem (ComponentSystemBase)
-        ProjectM.UpdateServerDebugLogsSystem (ComponentSystemBase)
-        ProjectM.EquipmentTransferSystem (ComponentSystemBase)
-        ProjectM.SplitItemV2System (ComponentSystemBase)
-        ProjectM.JewelCraftingCompleteSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryNetworkSystem (ISystem)
-        ProjectM.StopEndGameCreditsSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.ServerFeaturesSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.BuildModeOpenedSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.TeleportSystem (ComponentSystemBase)
-        ProjectM.JewelNetworkEventsSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.TrophySystem_Events_Server (ComponentSystemBase)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryServerEventSystem (ISystem)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferInitializeSystem (ISystem)
-        <unknown system>
-        ProjectM.WarEventDropItemsSystem (ComponentSystemBase)
-        ProjectM.HandleDismantleEventSystem (ComponentSystemBase)
-        ProjectM.SplitItemSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.TeleportToPlayerLocationSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        ProjectM.BonfireSystem_Server (ComponentSystemBase)
-        ProjectM.HealingBuffSystem (ComponentSystemBase)
-        ProjectM.StartChargingSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.ReplaceAbilityOnSlotWhenMountedBuffSystem_Update (ISystem)
-        ProjectM.Gameplay.Systems.GetTranslationOnUpdateSystem (ComponentSystemBase)
-        ProjectM.JewelCraftingUpdateSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.DestroyOnManualInterruptSystem (ComponentSystemBase)
-        ProjectM.ChatMessageSystem (ComponentSystemBase)
-        ProjectM.JewelCraftingStopSystem (ComponentSystemBase)
-        ProjectM.SystemMessageSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.CastleBuildingAttachmentBuffSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.WalkBackAndForthSystem (ComponentSystemBase)
-        ProjectM.UpdatePrisonSystem (ComponentSystemBase)
-        ProjectM.NoAdminSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Contest.ContestSystem_Update (ISystem)
-        <unknown system>
-        ProjectM.Gameplay.Systems.CreateGameplayEventOnTimePassedSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.TeleportPlayerToUnitSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.BloodAltarSystem_StartTrackVBloodUnit_System_V2 (ComponentSystemBase)
-        ProjectM.FusionForgeSystem_Events (ComponentSystemBase)
-        ProjectM.StablesSystem_Update (ISystem)
-        ProjectM.RconListenerSystem (ComponentSystemBase)
-        ProjectM.ProgressAchievementSystem (ComponentSystemBase)
-        ProjectM.HUD.MapOpenedSystem_Server (ComponentSystemBase)
-        ProjectM.Scripting.MessageFunctionSystem (ComponentSystemBase)
-        ProjectM.MoveAllItemsBetweenInventoriesSystem (ComponentSystemBase)
-        ProjectM.SetPlayerTeamSystem (ComponentSystemBase)
-        ProjectM.StopCraftingSystem (ComponentSystemBase)
-        ProjectM.Gameplay.TransmogModeEventSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.Scripting.RadialZoneSystem_Holy_Server (ISystem)
-        <unknown system>
-        <unknown system>
-        <unknown system>
-        ProjectM.MusicPlayerStationSystem_Events (ComponentSystemBase)
-        ProjectM.BloodMixerSystem_Update (ComponentSystemBase)
-        ProjectM.InsideSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CastleHeartStateUpdateSystem (ComponentSystemBase)
-        ProjectM.CastleRepairBuffDestroySystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Gameplay.Systems.TeleportPlayerLocationSystem (ComponentSystemBase)
-        ProjectM.UnitCompositionSpawnerSystem (ISystem)
-        ProjectM.ScheduleParentGroup (ComponentSystemGroup) - 3 children
-            ProjectM.GarbageCollectArchetypeSystem (ComponentSystemBase)
-            ProjectM.ScheduleGroup (ComponentSystemGroup) - 4 children
-                ProjectM.AutoChainTransitionSystem (ISystem)
-                <unknown system>
-                ProjectM.RandomizedSpawnChainUpdateSystem (ComponentSystemBase)
-                ProjectM.CheckInSunSystem (ComponentSystemBase)
-            ProjectM.NoStructuralChangesGroup (ComponentSystemGroup) - 20 children
-                ProjectM.DisableWhenNoPlayersInRangeOfChunkSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.Gameplay.Systems.HitCastColliderSystem_OnUpdate (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.DestroyAfterDurationSystem_Update (ISystem)
-                ProjectM.SunSystem (ComponentSystemBase)
-                ProjectM.PavementBonusSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.FlyLastValidPositionSystem (ComponentSystemBase)
-                ProjectM.VerifyRespawnPointConnectionsSystem (ComponentSystemBase)
-                ProjectM.Gameplay.InventoryRoute_RecalculateCastleHeartRouteCount (ISystem)
-                ProjectM.Terrain.UpdateUserWorldRegionSystem (ISystem)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-        ProjectM.PatrolMoveSystem (ISystem)
-        <unknown system>
-        ProjectM.SpawnRegionConsumeSpawnRequestSystem (ISystem)
-        <unknown system>
-        ProjectM.TeleportBuffSystem_Server (ComponentSystemBase)
-        ProjectM.NameableInteractableSystem (ComponentSystemBase)
-        ProjectM.WeaponCoating.CoatingEquipSystem (ComponentSystemBase)
-        ProjectM.Gameplay.DashSystem (ISystem)
-        ProjectM.Gameplay.Systems.CastleHeartUpdateRaidStateSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.UserAgeSystem (ComponentSystemBase)
-        ProjectM.HandleCreateCharacterEventSystem (ComponentSystemBase)
-        ProjectM.UnitSpawnerUpdateSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.MoveSpeedBuffSystem (ComponentSystemBase)
-        ProjectM.KillEventSystem (ComponentSystemBase)
-        ProjectM.Hybrid.TransmogEventsSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Scripting.RadialZoneSystem_Corruption_Server (ISystem)
-        <unknown system>
-        ProjectM.Gameplay.Systems.InteractValidateAndStopSystemServer (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.InteractSystemServer (ISystem)
-        ProjectM.Gameplay.Systems.DoorSystem_Server (ComponentSystemBase)
-        ProjectM.SmartMergeItemsBetweenInventoriesSystem (ComponentSystemBase)
-        ProjectM.UpdateServerDebugViewDataSystem (ComponentSystemBase)
-        ProjectM.BloodMixerSystem_Events (ComponentSystemBase)
-        ProjectM.DropItemSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.GiveCombatPresetSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        ProjectM.BloodAltarSystem_StopTrackVBloodUnit_System (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.ActivateVBloodAbilitySystem (ComponentSystemBase)
-        ProjectM.TickerSystem (ComponentSystemBase)
-        ProjectM.Scripting.TriggerSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CreateGameplayEventOnBuffReapplySystem (ComponentSystemBase)
-        ProjectM.ResetBuffEventSystem_Server (ComponentSystemBase)
-        <unknown system>
-        ProjectM.WeaponCoating.WeaponCoatingSystem (ISystem)
-        ProjectM.Terrain.UpdateWaypointRegionSystem (ComponentSystemBase)
-        ProjectM.MoveAllItemsBetweenInventoriesV2System (ComponentSystemBase)
-        ProjectM.InventoryRouteSyncModeSystem (ISystem)
-        ProjectM.SetOwnerRotateTowardsMovementSystem (ComponentSystemBase)
-        ProjectM.ServantDepositInventoryEventSystem (ComponentSystemBase)
-        ProjectM.Pathfinding.PathRequestDestroySystem (ComponentSystemBase)
-        ProjectM.ForgeSystem_Update (ComponentSystemBase)
-        ProjectM.UI.ReviveCancelEventSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.DropItemThrowSystem (ComponentSystemBase)
-        ProjectM.PlayerCombatBuffSystem_Reapplication (ComponentSystemBase)
-        <unknown system>
-        ProjectM.ToggleInvulnerableAdminEventSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.BloodLossPerSecondSystem (ISystem)
-        ProjectM.Hybrid.HybridAttachPointTransformSystem (ComponentSystemBase)
-        ProjectM.InventoryStartItemsSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Scripting.RadialZoneSystem_Curse_Server (ISystem)
-        ProjectM.CastleBuffsSystem (ComponentSystemBase)
-        ProjectM.DeleteMapMarkerSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.CreateGameplayEventOnMinionDeathSystem (ComponentSystemBase)
-        ProjectM.SetCurrentMapZoneSystem_Server (ISystem)
-        ProjectM.RevealMapSystem (ComponentSystemBase)
-        ProjectM.HandleRecommendedSpawnLocationRequestEventSystem (ComponentSystemBase)
-        ProjectM.GetTerritoryOwnerRequestSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.EquipServantItemSystem (ComponentSystemBase)
-        ProjectM.UpdateRefiningSystem (ISystem)
-        <unknown system>
-        ProjectM.UseCastleHeartSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.Placement.GetPlacementResultAsyncSystem (ComponentSystemBase)
-        ProjectM.FusionForgeSystem_Update (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.OpenDoorSystem (ComponentSystemBase)
-        ProjectM.ProfessorCoilSystem_Server_Update (ISystem)
-        <unknown system>
-        ProjectM.ReactToContestEventGroup (ComponentSystemGroup) - 7 children
-            ProjectM.Contest.ContestTriggerEvent_System (ISystem)
-            ProjectM.StunAnalyticsSystem_Server+StunAnalyticsSystem_Server_ContestEventHandlers (ComponentSystemBase)
-            ProjectM.Contest.Duel.DuelEventListenerSystem (ISystem)
-            ProjectM.Contest.Arena.CastleArenaStartingEventSystem (ISystem)
-            ProjectM.Contest.Arena.CastleArenaDefeatedEventSystem (ISystem)
-            <unknown system>
-            <unknown system>
-        ProjectM.Contest.Arena.CastleArenaObserveUpdateSystem (ISystem)
-        ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferSystem (ISystem)
-        <unknown system>
-        ProjectM.Gameplay.Systems.RemoveUserRemovableBuffEventSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.UsePortalSystem (ComponentSystemBase)
-        ProjectM.TeleportationRequestSystem (ComponentSystemBase)
-        ProjectM.VariousMigratedDebugEventsSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.RespawnAiEventSystem (ComponentSystemBase)
-        ProjectM.ToggleUserPermissionsSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Gameplay.Systems.UserDistanceTravelledSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.LifeTimeSystem (ISystem)
-        ProjectM.Gameplay.Systems.DestroyOnSpawnSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Shared.Systems.ServantInfoEventSystem_Server (ComponentSystemBase)
-        ProjectM.TravelToTargetSystem (ComponentSystemBase)
-        ProjectM.RemovePvPSafeBuffOnCastleEntrySystem (ISystem)
-        ProjectM.BecomeObserverSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.ElevateUserSystem (ComponentSystemBase)
-        ProjectM.JumpFromCliffsTriggerSystem (ISystem)
-        ProjectM.SpellMovementSystem_Update (ComponentSystemBase)
-        ProjectM.MoveGroup (ComponentSystemGroup) - 7 children
-            ProjectM.AbilityMoveGroup (ComponentSystemGroup) - 6 children
-                <unknown system>
-                <unknown system>
-                ProjectM.AbilityModifyMovementDuringCastSystem_Shared (ISystem)
-                ProjectM.AbilityRotateTowardAimDuringCastSystem_Shared (ComponentSystemBase)
-                <unknown system>
-                ProjectM.AbilityMoveStop_Shared (ComponentSystemBase)
-            ProjectM.MoveWithCurveSystem (ISystem)
-            ProjectM.AiDynamicCollisionSystem (ISystem)
-            ProjectM.PlayCommandSystemGroup (ComponentSystemGroup) - 3 children
-                ProjectM.Network.CommandUtility+InputCommandAbilityStateHistorySystem_Server (ComponentSystemBase)
-                ProjectM.Network.PlayCommandsSystem_Server (ISystem)
-                Network.Systems.TeleportIncorrectPositionSystem (ComponentSystemBase)
-            ProjectM.JumpFromCliffsTravelSystem (ComponentSystemBase)
-            <unknown system>
-            ProjectM.MoveEntitySystem (ISystem)
-        ProjectM.ProjectileSystem (ComponentSystemBase)
-        ProjectM.SleepInsideSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.MountSystem_Shared (ComponentSystemBase)
-        ProjectM.MapCollisionSystem (ISystem)
-        ProjectM.HeightCorrectionSystem (ComponentSystemBase)
-        ProjectM.ShowHeightSystem_Server (ComponentSystemBase)
-        ProjectM.Gameplay.DashStopOnMapCollisionSystem (ComponentSystemBase)
-        ProjectM.SetMapMarkerSystem (ComponentSystemBase)
-        ProjectM.Gameplay.ForceCraftingStationsEventSystem (ComponentSystemBase)
-        ProjectM.BuffOnConnectionStatusSystem (ISystem)
-        ProjectM.CastleBuffsTickSystem (ISystem)
-        ProjectM.GallopBuffSystem_Server (ComponentSystemBase)
-        ProjectM.GetServerTimeInfoEventSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Clan.UpdateClanStatusSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        ProjectM.Gameplay.KnockbackSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.DestroyOnOwnerDeathSystem (ComponentSystemBase)
-        <unknown system>
-        <unknown system>
-        ProjectM.Gameplay.Systems.UpdateCharacterCraftingSystem (ComponentSystemBase)
-        ProjectM.Gameplay.WarEvents.WarEventUpdateGroup (ComponentSystemGroup) - 6 children
-            ProjectM.Gameplay.WarEvents.WarEventRegistrySystem (ComponentSystemBase)
-            ProjectM.Gameplay.WarEvents.WarEventDebugSystem (ComponentSystemBase)
-            ProjectM.Gameplay.WarEvents.WarEventSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-        ProjectM.ReactToUnitStatChangedEventGroup (ComponentSystemGroup) - 2 children
-            ProjectM.ModifyUnitStatBloodBuffSystem_Event (ISystem)
-            <unknown system>
-        ProjectM.ReactToEquipmentChangedEventGroup (ComponentSystemGroup) - 3 children
-            ProjectM.EquipmentSystem (ISystem)
-            <unknown system>
-            <unknown system>
-        ProjectM.ReactToEntityHitConsumedGroup (ComponentSystemGroup) - 2 children
-            ProjectM.Gameplay.Systems.CreateGameplayEventOnOwnerSpellHitConsumedSystem (ComponentSystemBase)
-            <unknown system>
-        <unknown system>
-        ProjectM.ReactToInventoryChangedEventGroup (ComponentSystemGroup) - 9 children
-            <unknown system>
-            ProjectM.OnJewelEquippedSystem_Server (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.BuffByItemCategoryCountSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            ProjectM.RemoveJewelChangedSystem_Server (ComponentSystemBase)
-            ProjectM.ReactToInventoryChangedSystem (ComponentSystemBase)
-    ProjectM.LateUpdateGroup (ComponentSystemGroup) - 14 children
-        ProjectM.PlaceTileModelSystem (ComponentSystemBase)
-        ProjectM.LightningStorm.LightningStormRegionSystem (ISystem)
-        ProjectM.ItemPositionUpdater (ISystem)
-        ProjectM.ShowAiSystem (ComponentSystemBase)
-        ProjectM.Behaviours.LogErroneousBehaviourTreeNodeSystem (ComponentSystemBase)
-        ProjectM.CastleBuilding.CastleBuildingAttachmentAddedEventsClearSystem (ComponentSystemBase)
-        ProjectM.BloodMoonSystem (ISystem)
-        <unknown system>
-        <unknown system>
-        ProjectM.CastleBuilding.CastleBuildingAttachmentRemovedEventsClearSystem (ComponentSystemBase)
-        ProjectM.Scripting.ScriptMapperFinalizeDependenciesSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.TakeDamageInSunSystem_Server (ISystem)
-        ProjectM.Gameplay.Systems.CreateGameplayEventOnBehaviourStateChangedSystem (ComponentSystemBase)
-    ProjectM.PostUpdateBarrier (ComponentSystemBase)
-    ProjectM.RecursiveGroup (ComponentSystemGroup) - 10 children
-        ProjectM.DestroyBarrier (ComponentSystemBase)
-        ProjectM.DestroyGroup (ComponentSystemGroup) - 3 children
-            ProjectM.DestroyTagGroup (ComponentSystemGroup) - 4 children
-                ProjectM.SpawnChainTransitionSystem_PreDestroy (ComponentSystemBase)
-                ProjectM.Shared.Systems.DestroyWhenSequenceIsDestroyedSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.DestroyDeadSystem (ComponentSystemBase)
-                <unknown system>
-            ProjectM.ReactToDestroyTagGroup (ComponentSystemGroup) - 103 children
-                ProjectM.UpdateBuffsBuffer_Destroy (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.HitCastColliderSystem_OnDestroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.BloodConsumeBuffDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.Destroy_TravelBuffSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.ReplaceAbilityOnSlotWhenMountedBuffSystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.CastleSharedInventorySystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Shared.Systems.DestroySequenceWhenSelfIsDestroyedSystem (ComponentSystemBase)
-                ProjectM.Shared.Systems.ScriptDestroyServer (ComponentSystemBase)
-                ProjectM.MoveTowardsRotationSystem_Destroy (ComponentSystemBase)
-                ProjectM.DestroySpawnChainChildrenOnDestroySystem (ComponentSystemBase)
-                ProjectM.JumpFromCliffsTravelDestroySystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.Rebuilding.CastleRebuildTransferFinalizeSystem (ISystem)
-                ProjectM.CastleBuilding.DestroyRoofOnFloorDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.MountBuffDestroySystem_Shared (ComponentSystemBase)
-                ProjectM.DropItemThrowSystem_Destroy (ComponentSystemBase)
-                ProjectM.GallopBuffSystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.ServantReactToDestroySystem (ComponentSystemBase)
-                ProjectM.Gameplay.Destroy_KnockbackSystem (ComponentSystemBase)
-                ProjectM.CastleBuilding.CastleBuildingAttachmentCleanup (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.ArmorLevelSystem_Destroy (ComponentSystemBase)
-                ProjectM.TakeDamageInSunDestroySystem (ComponentSystemBase)
-                ProjectM.CastleBuilding.Teleporters.CastleTeleporterDisconnectSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.WeaponLevelSystem_Destroy (ComponentSystemBase)
-                ProjectM.ChangeKnockbackResistanceDuringCast_OnDestroy (ComponentSystemBase)
-                ProjectM.SpawnPrefabOnDestroySystem (ComponentSystemBase)
-                ProjectM.AbilityDisableHeightCorrectionSystem_OnDestroy (ComponentSystemBase)
-                <unknown system>
-                ProjectM.UnitSpawnerOnDestroySystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryOnDestroySystem (ComponentSystemBase)
-                ProjectM.DropInventorySystem (ComponentSystemBase)
-                ProjectM.TravelBuffDeregisterSystem (ComponentSystemBase)
-                ProjectM.RandomizedSpawnChainDestroySystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.AdditionalInteractBuffComponentDestroySystem (ComponentSystemBase)
-                ProjectM.InsideBuffDestroySystem_Shared (ComponentSystemBase)
-                ProjectM.HasResidentBuffDestroySystem_Shared (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.SpawnRegionOnDestroySystem (ComponentSystemBase)
-                ProjectM.SpawnChainDestroyedChildTransitionsSystem (ComponentSystemBase)
-                ProjectM.Network.ReturnNetworkIdSystem_Server_MegaStatics (ComponentSystemBase)
-                ProjectM.Destroy_SetOwnerRotateTowardsMovementSystem (ComponentSystemBase)
-                ProjectM.Destroy_MoveSpeedBuffSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.Contest.ContestSystem_Destroy (ISystem)
-                ProjectM.CastleBuilding.CastleHasItemsOnDestroySystem (ComponentSystemBase)
-                ProjectM.Gameplay.InventoryRouteDestroySystem (ISystem)
-                ProjectM.RemoveDestroyedEntityFromSpawnRegionSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.UnitMountDestroySystem (ComponentSystemBase)
-                ProjectM.Destroy_BuffModificationsSystem_Server (ComponentSystemBase)
-                ProjectM.ModifyBloodDrainSystem_Destroy (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.CastleDecrementCountOnDestroySystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.ModifyTeamBuffSystem_Destroy (ComponentSystemBase)
-                ProjectM.RelicDestroySystem (ComponentSystemBase)
-                ProjectM.UnitCompositionSpawnerDestroyTagChildrenSystem (ComponentSystemBase)
-                ProjectM.Destroy_SetOwnerRotateTowardsMouseSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.BagEquipTagSystem_Destroy (ComponentSystemBase)
-                ProjectM.Destroy_KnockbackResistanceBuff (ComponentSystemBase)
-                ProjectM.ProfessorCoilSystem_Server_Destroy (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.CreateGameplayEventOnDestroySystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.SoulShardBuffDestroySystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.UnitMounterDestroySystem (ComponentSystemBase)
-                ProjectM.AllowJumpFromCliffsBuffDestroySystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.CastleHeartClearRaidStateSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.Network.StoreDestroyedEntitiesSystem (ISystem)
-                ProjectM.Destroy_ServerControlsPositionSystem (ComponentSystemBase)
-                <unknown system>
-            ProjectM.DetachSystem (ComponentSystemBase)
-        ProjectM.BeforeSpawnGroup (ComponentSystemGroup) - 2 children
-            ProjectM.Gameplay.KnockbackEventSystem (ComponentSystemBase)
-            ProjectM.SpawnChainTransitionSystem_PreSpawn (ComponentSystemBase)
-        ProjectM.SpawnBarrier (ComponentSystemBase)
-        ProjectM.SpawnGroup (ComponentSystemGroup) - 5 children
-            ProjectM.SpawnTagDebugSystem (ComponentSystemBase)
-            ProjectM.ReactToSpawnGroup (ComponentSystemGroup) - 129 children
-                ProjectM.SpawnCastleTeamSystem (ComponentSystemBase)
-                ProjectM.CastleTeamConnectionSystem (ComponentSystemBase)
-                ProjectM.SetupInitialStatesGroup (ComponentSystemGroup) - 3 children
-                    ProjectM.SetupInitialStatesGroup_Step1 (ComponentSystemGroup) - 15 children
-                        ProjectM.Gameplay.Systems.GetOwnerFactionOnSpawnSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Systems.GetOwnerTeamOnSpawnSystem (ComponentSystemBase)
-                        ProjectM.CopySpellmodFromAbilitySystem (ComponentSystemBase)
-                        ProjectM.SpellModSpawnSystem (ComponentSystemBase)
-                        ProjectM.Shared.Systems.BloodQualitySpawnSystem (ISystem)
-                        ProjectM.MinionSpawnSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Systems.GetTranslationAlongPatrolOnSpawnSystem (ComponentSystemBase)
-                        ProjectM.MultiplyAbsorbCapByUnitStatsSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Systems.GetTranslationOnSpawnSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Systems.GetOwnerRotationOnSpawnSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Systems.OffsetTranslationOnSpawnWithBlockerSystem (ISystem)
-                        ProjectM.Gameplay.Systems.OffsetTranslationOnSpawnSystem (ComponentSystemBase)
-                        <unknown system>
-                        ProjectM.ResetCreateGameplayEventOnTickOnStacksChangedSystem (ComponentSystemBase)
-                        ProjectM.StackModifierSystem (ComponentSystemBase)
-                    ProjectM.SetupInitialStatesGroup_Step2 (ComponentSystemGroup) - 8 children
-                        ProjectM.ReplaceDropTablesByChunkSystem (ComponentSystemBase)
-                        ProjectM.Spawn_TravelBuffSystem (ComponentSystemBase)
-                        ProjectM.ProjectileSystem_Spawn_Server (ISystem)
-                        <unknown system>
-                        ProjectM.RandomizedSpawnChainSpawnSystem (ComponentSystemBase)
-                        ProjectM.Spawn_MoveSpeedBuffSystem (ComponentSystemBase)
-                        ProjectM.Gameplay.Spawn_DashSystem (ComponentSystemBase)
-                        <unknown system>
-                    ProjectM.BloodShareBuffSpawn_Server (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.JumpFromCliffsTravelSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.ArmorLevelSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.CastleHasItemsOnSpawnSystem (ComponentSystemBase)
-                ProjectM.CastleBuilding.CastleIncrementCountOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.BuffSystem_Spawn_Server (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.DownedEventSystem (ComponentSystemBase)
-                ProjectM.JewelSpawnSystem (ComponentSystemBase)
-                ProjectM.VampireDownedServerEventSystem (ComponentSystemBase)
-                ProjectM.Gameplay.KnockbackSystemSpawn (ComponentSystemBase)
-                ProjectM.RefinementstationSpawnSystem (ComponentSystemBase)
-                ProjectM.MountInitSystem_Server (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.DisconnectSettingsSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.SoulShardBuffSpawnSystem (ComponentSystemBase)
-                ProjectM.MountStatsSpawnSystem_Server (ComponentSystemBase)
-                <unknown system>
-                ProjectM.TravelBuffRegisterSystem (ComponentSystemBase)
-                ProjectM.HybridModelSeed_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Terrain.TerritoryManagerSpawnSystem (ComponentSystemBase)
-                ProjectM.InitializeAchievementDataSystem (ComponentSystemBase)
-                ProjectM.Network.SetupNetworkIdSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.UnitMounterSpawnSystem (ComponentSystemBase)
-                ProjectM.GallopBuffSystem_Spawn (ComponentSystemBase)
-                ProjectM.MountBuffSpawnSystem_Server (ComponentSystemBase)
-                ProjectM.ScaleWithBloodEfficiencySystem (ComponentSystemBase)
-                ProjectM.SpellMovementSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.ModifyTeamBuffSystem_Spawn (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.CreateGameplayEventOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Shared.Systems.SpawnTransformSystem_OnSpawn (ComponentSystemBase)
-                ProjectM.BuffDebugSystem (ComponentSystemBase)
-                ProjectM.SpawnTeamSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Shared.Systems.StaticTransformUpdateSystem_ReactToSpawn_Server (ComponentSystemBase)
-                ProjectM.InitializeYieldResourcesSystem (ComponentSystemBase)
-                ProjectM.Shared.Systems.RegisterSpawnedChunkObjectsSystem_ReactToSpawn (ComponentSystemBase)
-                ProjectM.Create_ServerControlsPositionSystem (ComponentSystemBase)
-                ProjectM.TravelToTargetSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.ItemPickupSystem (ComponentSystemBase)
-                ProjectM.Behaviours.RegisterEntityInBlackboardSystem (ComponentSystemBase)
-                ProjectM.InitializeNewSpawnChainSystem (ComponentSystemBase)
-                ProjectM.LinkMinionToOwnerOnSpawnSystem (ComponentSystemBase)
-                ProjectM.InstantiateMapIconsSystem_Spawn (ComponentSystemBase)
-                ProjectM.SalvagestationSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.LegDirectionSystem_Spawn (ComponentSystemBase)
-                ProjectM.Shared.Systems.AnnounceSiegeWeaponSystem (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                <unknown system>
-                ProjectM.InitializeExternalInventoriesSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.DropInInventoryOnSpawnSystem (ComponentSystemBase)
-                ProjectM.Behaviours.BehaviourTreeStateBuffsSystem_RegisterAndDestroy (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Behaviours.SetPreCombatPositionSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.UI.VbloodTrackingMenu_ConvertVbloodsOnDemandSystem (ComponentSystemBase)
-                ProjectM.Sequencer.SpawnSequenceForEntitySystem_Server (ComponentSystemBase)
-                ProjectM.RespawnPointSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Apply_BuffModificationsSystem_Server (ComponentSystemBase)
-                ProjectM.InsideInitSystem_Server (ComponentSystemBase)
-                ProjectM.BuffResistancesSpawnSystem (ComponentSystemBase)
-                ProjectM.AdditionalInteractBuffComponentSpawnSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.ApplyBuffOnSpawnSystem (ComponentSystemBase)
-                ProjectM.ModifyBloodDrainSystem_Spawn (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.CreateGameplayEventOnTickSystem_Spawn (ComponentSystemBase)
-                ProjectM.MoveTowardsPositionSystem_Server_Create (ComponentSystemBase)
-                ProjectM.CastleRepairSystem (ComponentSystemBase)
-                ProjectM.FeedableInventorySystem_Spawn (ComponentSystemBase)
-                ProjectM.ReplaceAbilityOnSlotSystem (ComponentSystemBase)
-                ProjectM.MoveTowardsRotationSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.TeleportBuffSpawnSystem (ComponentSystemBase)
-                ProjectM.BagEquipTagSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.AllowJumpFromCliffsBuffSpawnSystem (ComponentSystemBase)
-                ProjectM.SetDynamicCollisionRadiusOverrideSystem (ComponentSystemBase)
-                ProjectM.MapIconSpawnSystem (ComponentSystemBase)
-                ProjectM.ProfessorCoilSystem_Server_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryOnSpawnSystem (ComponentSystemBase)
-                ProjectM.SpawnCastleHeartSystem (ComponentSystemBase)
-                ProjectM.BehaviourTreeBindingSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.RandomLifeTimeSystem_Spawn (ComponentSystemBase)
-                ProjectM.UnitSpawnerReactSystem (ComponentSystemBase)
-                ProjectM.CastleSharedInventorySystem_Spawn (ComponentSystemBase)
-                ProjectM.TheMonsterGeneratorBuffSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.CastleBuilding.Teleporters.CastleTeleporterConnectSystem (ComponentSystemBase)
-                ProjectM.TargetAOESystem (ComponentSystemBase)
-                ProjectM.Shared.Systems.ScriptSpawnServer (ComponentSystemBase)
-                ProjectM.Shared.Systems.CreatedTimeSpawnSystem (ComponentSystemBase)
-                ProjectM.UnitMountSpawnSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.WeaponLevelSystem_Spawn (ComponentSystemBase)
-                <unknown system>
-                <unknown system>
-                ProjectM.TraderSpawnSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.HitCastColliderSystem_OnSpawn (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.TagDraculaSpawnChainsSystem (ComponentSystemBase)
-                ProjectM.DestroyWhenNoCharacterNearbyAfterDurationSystem_Spawn (ComponentSystemBase)
-                ProjectM.SpawnAbilityGroupSlotsSystem (ComponentSystemBase)
-                ProjectM.ReactToPlayerCharacterSpawnSystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.AbilitySpawnSystem (ComponentSystemBase)
-                ProjectM.HeightCorrectionSpawnSystem (ComponentSystemBase)
-                ProjectM.Scripting.OnSpawnedSystem (ComponentSystemBase)
-                ProjectM.SetTeamOnSpawnSystem (ComponentSystemBase)
-                <unknown system>
-            ProjectM.AttachSystem_Spawn (ComponentSystemBase)
-            ProjectM.Network.NetworkedCreateTimeSystem (ComponentSystemBase)
-            ProjectM.WeaponCoating.ApplyStoredWeaponCoatingOnSpawnSystem (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.HitCastColliderProcessSystem_Recursive (ComponentSystemBase)
-        ProjectM.Gameplay.Systems.HandleGameplayEventsRecursiveSystem (ComponentSystemBase)
-        ProjectM.StatChangeGroup (ComponentSystemGroup) - 16 children
-            ProjectM.Gameplay.Systems.DealDamageSystem (ISystem)
-            ProjectM.Gameplay.Systems.CreateGameplayEventOnDistanceReachedSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.StatChangeMutationSystem (ComponentSystemBase)
-            ProjectM.DestroyBuffOnDamageTakenSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.CreateGameplayEventOnAbilityImpairedSystem (ComponentSystemBase)
-            ProjectM.PlayerCombatBuffSystem_InitialApplication_Damage (ISystem)
-            ProjectM.VBloodSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.KillAndDisableInactivePlayerAfterDuration (ComponentSystemBase)
-            ProjectM.RepairItemSystem (ComponentSystemBase)
-            ProjectM.ModifyCooldownRecoveryRateSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            ProjectM.ModifyInventorySizeEventSystem (ComponentSystemBase)
-            ProjectM.DestroyBuffOnMoveSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.StatChangeSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.CreateGameplayEventsOnDamageTakenSystem (ComponentSystemBase)
-        ProjectM.ReactToDeadGroup (ComponentSystemGroup) - 18 children
-            <unknown system>
-            <unknown system>
-            ProjectM.DeathEventListenerSystem (ComponentSystemBase)
-            ProjectM.Cleanup_BuffModificationsSystem_Server (ComponentSystemBase)
-            <unknown system>
-            ProjectM.YieldResourcesSystem_Dead (ComponentSystemBase)
-            <unknown system>
-            ProjectM.DestroyBuffsWithDeadTargetsOrOwnersSystem (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleBuildingDeadCleanup (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.OnDeathSystem (ComponentSystemBase)
-            ProjectM.UntrackVbloodOnDeathSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.OnKillSystem (ComponentSystemBase)
-            ProjectM.AlertAlliesOnDeathSystem (ComponentSystemBase)
-            ProjectM.RespawnCharacterSystem (ComponentSystemBase)
-            ProjectM.Gameplay.Systems.CreateGameplayEventsOnDeathSystem (ComponentSystemBase)
-            ProjectM.KillMinionsOnMasterDeathSystem (ComponentSystemBase)
-            ProjectM.UserKillServerEventSystem (ComponentSystemBase)
-            ProjectM.DestroyDeathEventSystem (ComponentSystemBase)
-        ProjectM.NonRecursiveGroup (ComponentSystemGroup) - 1 children
-            ProjectM.AbilityGroup (ComponentSystemGroup) - 11 children
-                ProjectM.AbilityInitializeGroup (ComponentSystemGroup) - 2 children
-                    ProjectM.Gameplay.ValidateAbilityGroupsSystem (ComponentSystemBase)
-                    ProjectM.AbilityStartCastingSystem_Server (ISystem)
-                ProjectM.Update_ReplaceAbilityOnSlotSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.VerifyingDismantleAbilitySystem (ComponentSystemBase)
-                ProjectM.VerifyingRepairAbilitySystem (ComponentSystemBase)
-                ProjectM.Gameplay.Systems.GetOwnerRotationSystem (ComponentSystemBase)
-                <unknown system>
-                ProjectM.Gameplay.Systems.CreateGameplayEvents_OnAbilityCast (ComponentSystemBase)
-                ProjectM.AbilityReactToCastStartGroup (ComponentSystemGroup) - 2 children
-                    ProjectM.AbilityCastStarted_SpawnPrefabSystem_Server (ComponentSystemBase)
-                    ProjectM.AbilityCastStarted_SetupAbilityTargetSystem_Shared (ComponentSystemBase)
-                ProjectM.AbilityReactDuringCastGroup (ComponentSystemGroup) - 5 children
-                    ProjectM.AbilityCooldownSystems (ISystem)
-                    ProjectM.ResetCreateGameplayEventOnTickWhenCastingSystem (ComponentSystemBase)
-                    ProjectM.ChangeKnockbackResistanceDuringCast_Shared (ComponentSystemBase)
-                    ProjectM.AbilityDisableHeightCorrectionSystem_Shared (ComponentSystemBase)
-                    ProjectM.DestroyEntityOnAbilityEndedSystem (ComponentSystemBase)
-                ProjectM.AbilityReactToCastFinishGroup (ComponentSystemGroup) - 3 children
-                    Gameplay.Systems.Ability.AbilityFreeCastSystem (ISystem)
-                    ProjectM.AbilityRunScriptsSystem (ComponentSystemBase)
-                    Gameplay.Systems.Ability.AbilityStorePowerSystem (ISystem)
-    ProjectM.AfterRecursiveSpawnDestroyGroup (ComponentSystemGroup) - 4 children
-        ProjectM.CreatedDelayedDestroyEventSystem (ISystem)
-        ProjectM.AfterRecursiveSpawnDestroyBarrier (ComponentSystemBase)
-        ProjectM.BlinkSystems_Server (ComponentSystemBase)
-        <unknown system>
-    ProjectM.BeforeTransformSystemGroup (ComponentSystemGroup) - 4 children
-        <unknown system>
-        ProjectM.UserControllerDataCopySystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.UserTranslationCopySystem (ComponentSystemBase)
-    ProjectM.TransformGroup (ComponentSystemGroup) - 1 children
-        Unity.Transforms.TransformSystemGroup (ComponentSystemGroup) - 4 children
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-    ProjectM.ReactToTransformGroup (ComponentSystemGroup) - 17 children
-        <unknown system>
-        <unknown system>
-        ProjectM.Network.NetworkInterpolationSystem_Server (ComponentSystemBase)
-        <unknown system>
-        ProjectM.TravelBuffUpdateLastTranslationSystem (ComponentSystemBase)
-        ProjectM.Terrain.WorldLoadingManagerSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.UpdateTilePositionSystem (ISystem)
-        ProjectM.ReactToTilePositionGroup (ComponentSystemGroup) - 12 children
-            <unknown system>
-            <unknown system>
-            ProjectM.DirtyTileBoundsManager (ISystem)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            ProjectM.CastleBuilding.TileModelEventsBarrier (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleBlockSystem (ComponentSystemBase)
-            ProjectM.Tiles.TileWorldSystem (ISystem)
-        ProjectM.ReactToTileBoundsGroup (ComponentSystemGroup) - 10 children
-            ProjectM.Tiles.TileModelSpatialLookupSystem (ISystem)
-            ProjectM.CastleBuilding.CastleEventsOnChunkLoadedSystem (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleFloorAndWallsUpdateSystem (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleBuildingClearRoomEventsSystem (ComponentSystemBase)
-            <unknown system>
-            ProjectM.CastleBuilding.RoomRoofUpdateSystem (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleBuildingWorkstationsSystem (ComponentSystemBase)
-            ProjectM.UpdateTileCellsSystem_Server (ComponentSystemBase)
-            ProjectM.Network.CommandUtility+InputCommandStateHistorySystem_Server (ComponentSystemBase)
-            ProjectM.CastleBuilding.CastleFallingSystem (ISystem)
-        ProjectM.TeleportPlayersOutOfCollisionSystem (ISystem)
-        ProjectM.CastleBuilding.DisableShowOnlyInPreviewSystem_Server (ComponentSystemBase)
-        ProjectM.ShowSunDamageRaysSystem (ComponentSystemBase)
-        ProjectM.Shared.Systems.SpawnTransformSystem_OnReactToTransform (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Gameplay.DashUpdateLastTranslationSystem (ComponentSystemBase)
-        ProjectM.TileModelSetRegisteredState (ISystem)
-    ProjectM.BeforeSerializeBarrierGroup (ComponentSystemGroup) - 7 children
-        ProjectM.Network.UserActivityGridSystem (ComponentSystemBase)
-        ProjectM.Network.SerializeAndSendServerEventsSystem (ComponentSystemBase)
-        ProjectM.Network.SpellModSyncSystem_Server (ComponentSystemBase)
-        ProjectM.CastleBuilding.Systems.AssetSwapFloorUpdateSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.CastleBuilding.Systems.AssetSwappingSystem (ComponentSystemBase)
-        <unknown system>
-    ProjectM.StunlockEntityCommandBufferSystem (ComponentSystemBase)
-    <unknown system>
-    ProjectM.CollisionGroup (ComponentSystemGroup) - 1 children
-        Unity.Entities.FixedStepSimulationSystemGroup (ComponentSystemGroup) - 5 children
-            ProjectM.DestroyInFixed (ISystem)
-            Unity.Entities.BeginFixedStepSimulationEntityCommandBufferSystem (ComponentSystemBase)
-            <unknown system>
-            Unity.Physics.Systems.BuildStaticPhysicsWorld (ISystem)
-            Unity.Entities.EndFixedStepSimulationEntityCommandBufferSystem (ComponentSystemBase)
-    ProjectM.SerializeGroup (ComponentSystemGroup) - 15 children
-        ProjectM.Network.SetupNetworkIdSystem_PreSerialize (ComponentSystemBase)
-        ProjectM.Network.UpdateSnapshotsSystem (ComponentSystemBase)
-        ProjectM.Network.SetSnapshotOnDestroyedEntitiesSystem (ComponentSystemBase)
-        ProjectM.Network.PacketBookkeeperSystem (ComponentSystemBase)
-        <unknown system>
-        ProjectM.Shared.RelicBoundMapIcon_SyncSystem (ISystem)
-        <unknown system>
-        ProjectM.Shared.WarEventNetworkingSystem (ISystem)
-        <unknown system>
-        ProjectM.SyncMapIconsSystem (ISystem)
-        ProjectM.Network.PrioritizeSystem (ISystem)
-        ProjectM.Network.MakePacketSystem (ISystem)
-        ProjectM.Network.SendPacketSystem (ComponentSystemBase)
-        ProjectM.Network.NetworkProfilerSystem (ComponentSystemBase)
-        ProjectM.AfterSerializeGroup (ComponentSystemGroup) - 0 children
-    ProjectM.FinalizeGroup_Server (ComponentSystemGroup) - 2 children
-        ProjectM.Network.CommandUtility+ClearInputCommands (ComponentSystemBase)
-        ProjectM.DisableWhenNoPlayersInRangeSystem_Server (ISystem)
-    Unity.Entities.LateSimulationSystemGroup (ComponentSystemGroup) - 0 children
-    Unity.Entities.EndSimulationEntityCommandBufferSystem (ComponentSystemBase)
-Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) - 21 children
+Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) | 21 children
     Unity.Entities.BeginInitializationEntityCommandBufferSystem (ComponentSystemBase)
     ProjectM.ECBSyncPointManager (ComponentSystemBase)
     ProjectM.WorldFrameSystem (ComponentSystemBase)
     ProjectM.SetupSyncedServerDebugSettingsForWorld_InitializationSystemGroup (ComponentSystemBase)
-    <unknown system>
+    <unknown system type>
     Stunlock.Core.SystemUpdateFrequencySystem (ISystem)
     ProjectM.RuntimeConversionSystem (ComponentSystemBase)
     Unity.Entities.UpdateWorldTimeSystem (ComponentSystemBase)
-    ProjectM.ConsoleCommandGroup (ComponentSystemGroup) - 2 children
+    ProjectM.ConsoleCommandGroup (ComponentSystemGroup) | 2 children
         ProjectM.ServerConsoleCommandSystem (ComponentSystemBase)
         ProjectM.SpawnChainDebugCommandSystem (ComponentSystemBase)
     ProjectM.ServerGameSettingsSystem (ComponentSystemBase)
-    Unity.Scenes.SceneSystemGroup (ComponentSystemGroup) - 5 children
+    Unity.Scenes.SceneSystemGroup (ComponentSystemGroup) | 5 children
         Unity.Scenes.WeakAssetReferenceLoadingSystem (ISystem)
         Unity.Scenes.SceneSystem (ISystem)
         Unity.Scenes.ResolveSceneReferenceSystem (ComponentSystemBase)
         Unity.Scenes.SceneSectionStreamingSystem (ComponentSystemBase)
         ProjectM.SetupRetainBlobAssetsSystem (ComponentSystemBase)
     Unity.Entities.RetainBlobAssetSystem (ComponentSystemBase)
-    <unknown system>
+    <unknown system type>
     ProjectM.Scripting.ServerScriptMapper (ComponentSystemBase)
     ProjectM.FixGlobalVersionOverflowSystem (ComponentSystemBase)
-    ProjectM.ReactToSceneLoadedGroup (ComponentSystemGroup) - 10 children
+    ProjectM.ReactToSceneLoadedGroup (ComponentSystemGroup) | 10 children
         Conversion.StaticTerrainChunkTransformationSystem (ISystem)
         ProjectM.Shared.Systems.CleanupSubSceneOnLoadSystem (ComponentSystemBase)
         ProjectM.SceneLoadSystem (ISystem)
@@ -1885,7 +977,7 @@ Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) - 21 children
         ProjectM.Terrain.WorldLoadStartupTracker (ComponentSystemBase)
         ProjectM.Terrain.WorldInitializationSystem (ComponentSystemBase)
         ProjectM.Terrain.TerrainManager (ComponentSystemBase)
-        ProjectM.ReactToChunkLoadedGroup (ComponentSystemGroup) - 6 children
+        ProjectM.ReactToChunkLoadedGroup (ComponentSystemGroup) | 6 children
             ProjectM.ChunkDataRemappingManager_SetupMapIconRemappings (ComponentSystemBase)
             ProjectM.Terrain.TerritorySpawnSystem (ComponentSystemBase)
             ProjectM.Terrain.ChunkObjectManager (ComponentSystemBase)
@@ -1893,18 +985,18 @@ Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) - 21 children
             ProjectM.Terrain.ChunkMapZoneSpawnOnLoad (ComponentSystemBase)
             ProjectM.ChunkDataRemappingManager (ComponentSystemBase)
     Unity.Entities.PerformanceRecorderSystem (ComponentSystemBase)
-    ProjectM.PrefabInitializationGroup (ComponentSystemGroup) - 27 children
+    ProjectM.PrefabInitializationGroup (ComponentSystemGroup) | 27 children
         ProjectM.GameDataSubSceneSystem (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.GameDataManager (ComponentSystemBase)
         Stunlock.Core.PrefabCollectionSystem_Base (ComponentSystemBase)
         ProjectM.SetupServerSettings_PrefabMappings (ComponentSystemBase)
-        <unknown system>
+        <unknown system type>
         ProjectM.SetupServerSettings (ComponentSystemBase)
         ProjectM.Shared.SpellModTierCollectionSystem (ComponentSystemBase)
         ProjectM.JewelRegisterSystem (ComponentSystemBase)
         ProjectM.LightningStorm.LightningStormTypeCollectionSystem (ISystem)
-        <unknown system>
+        <unknown system type>
         ProjectM.CurveCollectionUpdaterSystem (ISystem)
         ProjectM.JointConversionFinalizationSystem (ComponentSystemBase)
         ProjectM.Shared.Systems.RemoveHybridRenderingFromServerPrefabsSystem (ComponentSystemBase)
@@ -1921,77 +1013,79 @@ Unity.Entities.InitializationSystemGroup (ComponentSystemGroup) - 21 children
         Stunlock.Core.Authoring.ProcessWaitingForBakingSystem (ComponentSystemBase)
         ProjectM.BuildItemKeyLookupSystem (ISystem)
         ProjectM.Shared.Systems.RegisterPrefabEventsCleanupSystem (ComponentSystemBase)
-    ProjectM.LoadPersistenceGroup (ComponentSystemGroup) - 3 children
+    ProjectM.LoadPersistenceGroup (ComponentSystemGroup) | 3 children
         ProjectM.LoadPersistenceSystemV2 (ComponentSystemBase)
-        ProjectM.ReactToPersistenceLoadedGroup (ComponentSystemGroup) - 53 children
+        ProjectM.ReactToPersistenceLoadedGroup (ComponentSystemGroup) | 53 children
             ProjectM.SetupLocalToWorldOnLoadSystem (ComponentSystemBase)
             ProjectM.SetupServerSettings_InstancesLoaded (ComponentSystemBase)
             ProjectM.UpdateTileCellsSystem_ServerOnPersistenceLoad (ComponentSystemBase)
             ProjectM.UpdateBuffTypeOnPersistenceLoadSystem (ComponentSystemBase)
             ProjectM.Network.SetupNetworkIdSystem_OnPersistenceLoad (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.CastleBuilding.AfterLoadRemoveDisabledFromRoomSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.ProfessorCoilSystem_Server_OnPersistenceLoaded (ComponentSystemBase)
             ProjectM.RepairBrokenAbilityChargesSystem (ComponentSystemBase)
             ProjectM.RepairTileModelEditingOnPersistenceLoad (ComponentSystemBase)
             ProjectM.OnJewelLoadSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.CastleBuilding.CastleWorkstations_AddDisableWhenNoPlayersInRange (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.CastleBuilding.Systems.CastleRailingsRegisterOnPersistenceLoad (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.Network.SyncToUserBitMaskSystem_OnPersistenceLoad (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
+            <unknown system type>
             ProjectM.TravelBuffCollectionPersistenceSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.Gameplay.Systems.CastleHeartInitializeRaidStateSystem (ComponentSystemBase)
             ProjectM.SpawnTeamSystem_OnPersistenceLoad (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
             ProjectM.AfterLoadUpdateDayNightCycleSystem (ComponentSystemBase)
             ProjectM.AttachSystem_ReactToPersistenceLoad (ComponentSystemBase)
             ProjectM.RemoveCharmSourceFromVBloods_Hotfix_0_6 (ComponentSystemBase)
             ProjectM.RepairBrokenEquippedSystem (ComponentSystemBase)
             ProjectM.PostPersistenseLoadedUpdateUnlocksSystem (ComponentSystemBase)
             ProjectM.RepairBrokenInventoryItemsSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.Network.SpellModSyncPersistenceSystem (ComponentSystemBase)
             ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistryPersistenceSystem (ISystem)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
             ProjectM.CastleBuilding.Placement.RemapCastleHeartTerritoryConnectionOnPersistenceLoad (ComponentSystemBase)
             ProjectM.ModifiablePatchingSystem (ComponentSystemBase)
             ProjectM.Shared.Systems.RegisterSpawnedChunkObjectsSystem_PersistenceLoad (ComponentSystemBase)
             ProjectM.RepairDoubleVBloodSpawnedSystem (ComponentSystemBase)
-            <unknown system>
-            <unknown system>
+            <unknown system type>
+            <unknown system type>
             ProjectM.ClearUsersOnLoadSystem (ComponentSystemBase)
             ProjectM.CompressModificationIdsOnLoadSystem (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.StaticHierarchySystem_OnPersistenceLoad (ComponentSystemBase)
-            <unknown system>
+            <unknown system type>
             ProjectM.RecalculateSharedInventorySystem_PersistenceLoaded (ComponentSystemBase)
-        ProjectM.FinalizePersistenceLoadSystem (ComponentSystemGroup) - 0 children
+        ProjectM.FinalizePersistenceLoadSystem (ComponentSystemGroup) | 0 children
     Rukhanka.BlobDatabaseUpdateSystem (ISystem)
     Unity.Entities.EndInitializationEntityCommandBufferSystem (ComponentSystemBase)
 ProjectM.MapZoneCollectionSystem (ComponentSystemBase)
 ProjectM.Contest.ContestIdManagerSystem (ComponentSystemBase)
 ProjectM.TravelBuffCollectionSystem (ComponentSystemBase)
 ProjectM.Shared.Systems.PhysicsBugfixSystem (ComponentSystemBase)
-<unknown system>
-<unknown system>
+<unknown system type>
+<unknown system type>
 ProjectM.AttachParentIdSystem (ComponentSystemBase)
-<unknown system>
+<unknown system type>
 ProjectM.CurveCollectionSystem (ComponentSystemBase)
 ProjectM.StunAnalyticsSystem_Server (ComponentSystemBase)
 ProjectM.GameplayEventsSystem (ComponentSystemBase)
-<unknown system>
+<unknown system type>
 ProjectM.ServerDebugSettingsSystem (ComponentSystemBase)
 ProjectM.ModificationSystem (ComponentSystemBase)
 ProjectM.CastleBuilding.Rebuilding.CastleRebuildRegistrySystem_Server (ComponentSystemBase)
+
+
