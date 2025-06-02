@@ -1,153 +1,154 @@
-Some components seen on a PlayerCharacter entity:
-
-AbilityBar_Server
-AbilityBar_Shared
-Blood
-Equipment
-BuffResistances
-PlayerCharacter
-TeamReference
-ReturnToNetherWaypoint
-BloodMoonBuffState
-Mounter
-Resident
-TakeDamageInSun
-TakeDamageInSunDebuffState
-EntityInput
-ControlledBy
-BagHolder
-Interactor
-Residency
-RespawnCharacter
-CurrentTileModelEditing
-Script_CreateGameplayEventOnDamageDealtToEntityCategory_DataServer
-Script_ApplyBuffUnderHealthThreshhold_DataServer
-LocalToWorld
-Rotation
-Translation
-PrefabGUID
-PhysicsCollider
-StaticPhysicsWorldBodyIndex
-AbilityBarInitializationState
-Aggroable
-FactionReference
-VBloodConsumeSource
-PlacementDestroyData
-CustomizationFeatures
-DestroyData
-DestroyState
-Energy
-Buffable
-GlobalCooldown
-Hideable
-Stealthable
-Health
-HealthConstants
-Immortal
-LastTranslation
-Movement
-PavementBonus
-CollisionRadius
-MapCollision
-Velocity
-TargetDirection
-Team
-TileBounds
-TilePosition
-TileModelSpatialData
-TileData
-VBloodAbilityOwnerData
-BloodMoonBuff
-BuffableFlagState
-CanFly
-EntityCategory
-LifeLeech
-Vision
-EntityAimData
-MoveVelocity
-ModifiableValueIds
-ResistanceData
-UnitStats
-DamageCategoryStats
-ResistCategoryStats
-ImpactMaterial
-NetworkedTimeout
-NetworkedSettings
-UpToDateUserBitMask
-Latency
-FrameChanged
-NetworkId
-NetworkSnapshot
-TileModel
-HybridModelSeed
-DeathRagdollForce
-FallToHeight
-CombatMusicListener_Shared
-Crowdedness
-Interactable
-InteractedUpon
-TravelToTargetRadius
-DynamicCollision
-Height
-JumpFromCliffs
-CharacterVoiceActivity
-IsSpellControlled
-RestrictPlacementArea
-LightningAttractorGameplay
-NetworkInterpolated_Shared
-AttachParentId
-LinkedEntityGroup [B]
-FollowerBuffer [B]
-AttachedBuffer [B]
-AbilityGroupSlotBuffer [B]
-BuffBuffer [B]
-InventoryInstanceElement [B]
-VBloodAbilityBuffEntry [B]
-EntitiesInView_Server [B]
-BoolModificationBuffer [B]
-EntityModificationBuffer [B]
-FloatModificationBuffer [B]
-Float3ModificationBuffer [B]
-IntModificationBuffer [B]
-LongModificationBuffer [B]
-PrefabGUIDModificationBuffer [B]
-CombatMusicListener_SourceElement [B]
-EquipmentSetBuff [B]
-BloodQualityBuff [B]
-AttachMapIconsToEntity [B]
-MapIconPerUserData [B]
-GameplayEventListeners [B]
-NetSnapshot [B]
-SnapshotFrameChangedBuffer [B]
-CrowdednessPlayerBufferElement [B]
-BuffByItemCategoryCount [B]
-BuffOnConnectionStatusElement [B]
-InteractAbilityBuffer [B]
-CreateGameplayEventsOnAbilityTrigger [B]
-CreateGameplayEventsOnAbilityTriggerAbilityPrefabTargets [B]
-CreateGameplayEventOnDamageTaken [B]
-CreateGameplayEventsOnSpawn [B]
-ApplyBuffOnGameplayEvent [B]
-GameplayEventIdMapping [B]
-Snapshot_FollowerBuffer [B]
-Snapshot_InventoryInstanceElement [B]
-PrefabCollectionPrefabTag
-UsesSpawnTag
-InventoryOwner
-TilePlacementTag
-TileRestrictionAreaTag
-RadialDamageTarget
-DisableWhenNoPlayersInRange
-ScriptSpawn
-Networked
-MoveStopTrigger
-HideOutsideVision
-VampireTag
-CanBuildTileModels
-EntitySpawnedMetadata
-IsConnected
-EntityMetadata
-BlobAssetOwner
-TileModelRegistrationState
-NetworkSnapshotType
-TileModelLayer
+ProjectM.Residency
+ProjectM.CastleBuilding.CurrentTileModelEditing
+ProjectM.AbilityBar_Server
+ProjectM.AbilityBar_Shared
+ProjectM.Blood
+ProjectM.EntityOwner
+ProjectM.EntityCreator
+ProjectM.Equipment
+ProjectM.BuffResistances
+ProjectM.RespawnCharacter
+ProjectM.PlayerCharacter
+ProjectM.ReturnToNetherWaypoint
+ProjectM.BloodMoonBuffState
+ProjectM.Mounter
+ProjectM.TakeDamageInSun
+ProjectM.TakeDamageInSunDebuffState
+ProjectM.EntityInput
+ProjectM.ControlledBy
+ProjectM.Shared.BagHolder
+ProjectM.Shared.Interactor
+ProjectM.Shared.VampireAttributeCapModificationsSource
+ProjectM.Gameplay.Scripting.Script_CreateGameplayEventOnDamageDealtToEntityCategory_DataServer
+ProjectM.Gameplay.Scripting.Script_ApplyBuffUnderHealthThreshold_DataServer
+ProjectM.CombatMusicListener_Shared
+ProjectM.Crowdedness
+ProjectM.Interactable
+ProjectM.InteractedUpon
+ProjectM.TravelToTargetRadius
+ProjectM.DynamicCollision
+ProjectM.Height
+ProjectM.JumpFromCliffs
+ProjectM.WeaponCoatingChargeUpTimer
+ProjectM.CharacterVoiceActivity
+ProjectM.IsSpellControlled
+ProjectM.Tiles.RestrictPlacementArea
+ProjectM.LightningStorm.LightningAttractorGameplay
+ProjectM.Network.NetworkInterpolated_Shared
+ProjectM.AbilityBarInitializationState
+ProjectM.Aggroable
+ProjectM.FactionReference
+ProjectM.MinionMasterStats
+ProjectM.VBloodConsumeSource
+ProjectM.PlacementDestroyData
+ProjectM.CustomizationFeatures
+ProjectM.DeathReason
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Buffable
+ProjectM.GlobalCooldown
+ProjectM.Hideable
+ProjectM.Stealthable
+ProjectM.Health
+ProjectM.HealthConstants
+ProjectM.Immortal
+ProjectM.InventoryOwner
+ProjectM.LastTranslation
+ProjectM.Movement
+ProjectM.PavementBonus
+ProjectM.CollisionRadius
+ProjectM.MapCollision
+ProjectM.Velocity
+ProjectM.PlayerLastValidPosition
+ProjectM.TargetDirection
+ProjectM.Team
+ProjectM.TileBounds
+ProjectM.TileModelSpatialData
+ProjectM.TileData
+ProjectM.VBloodAbilityOwnerData
+ProjectM.BloodMoonBuff
+ProjectM.BuffableFlagState
+ProjectM.CanFly
+ProjectM.EntityCategory
+ProjectM.LifeLeech
+ProjectM.Vision
+ProjectM.EntityAimData
+ProjectM.MoveVelocity
+ProjectM.ResistanceData
+ProjectM.UnitStats
+ProjectM.DamageCategoryStats
+ProjectM.ResistCategoryStats
+ProjectM.Sequencer.ImpactMaterial
+ProjectM.Network.Networked
+ProjectM.Network.NetworkedTimeout
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.SyncToUserBitMask
+ProjectM.Network.Latency
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Tiles.TileModel
+ProjectM.Hybrid.HybridModelSeed
+ProjectM.Hybrid.DeathRagdollForce
+ProjectM.Shared.VampireAttributeCaps
+ProjectM.Shared.FreeCastData
+ProjectM.Shared.VampireSpecificAttributes
+ProjectM.Shared.FallToHeight
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Physics.PhysicsCollider
+Unity.Physics.Systems.StaticPhysicsWorldBodyIndex
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.TeamReference
+ProjectM.TilePosition
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+ProjectM.EquipmentSetBuff [Buffer]
+ProjectM.BloodQualityBuff [Buffer]
+ProjectM.InverseAggroBufferElement [Buffer]
+ProjectM.FollowerBuffer [Buffer]
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.AbilityGroupSlotBuffer [Buffer]
+ProjectM.BuffBuffer [Buffer]
+ProjectM.InventoryInstanceElement [Buffer]
+ProjectM.ActivePassivesBuffer [Buffer]
+ProjectM.VBloodAbilityBuffEntry [Buffer]
+ProjectM.EntitiesInView_Server [Buffer]
+ProjectM.Network.SyncToUserBuffer [Buffer]
+Unity.Entities.LinkedEntityGroup [Buffer]
+ProjectM.CrowdednessPlayerBufferElement [Buffer]
+ProjectM.BuffByItemCategoryCount [Buffer]
+ProjectM.BuffOnConnectionStatusElement [Buffer]
+ProjectM.InteractAbilityBuffer [Buffer]
+ProjectM.CreateGameplayEventsOnAbilityTrigger [Buffer]
+ProjectM.CreateGameplayEventOnDamageTaken [Buffer]
+ProjectM.CreateGameplayEventsOnSpawn [Buffer]
+ProjectM.ApplyBuffOnGameplayEvent [Buffer]
+ProjectM.GameplayEventIdMapping [Buffer]
+ProjectM.Network.Snapshot_ActivePassivesBuffer [Buffer]
+ProjectM.Network.Snapshot_FollowerBuffer [Buffer]
+ProjectM.Network.Snapshot_InventoryInstanceElement [Buffer]
+ProjectM.AttachMapIconsToEntity [Buffer]
+ProjectM.UnlockedPassivesBuffer [Buffer]
+ProjectM.GameplayEventListeners [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.MoveStopTrigger
+ProjectM.HideOutsideVision
+ProjectM.VampireTag
+ProjectM.CastleBuilding.CanBuildTileModels
+ProjectM.Contest.ContestTerminatorTag
+ProjectM.TilePlacementTag
+ProjectM.TileRestrictionAreaTag
+ProjectM.RadialDamageTarget
+ProjectM.DisableWhenNoPlayersInRange
+ProjectM.Scripting.ScriptSpawn
+ProjectM.Network.OnlySyncToUsersTag
+Unity.Entities.Simulate
+ProjectM.Network.IsConnected
+Unity.Entities.BlobAssetOwner
+ProjectM.TileModelRegistrationState
+ProjectM.Network.NetworkSnapshotType
+ProjectM.Tiles.TileModelLayer
+Unity.Physics.PhysicsWorldIndex
