@@ -1,0 +1,26 @@
+ProjectM.Attach
+ProjectM.EntityOwner
+ProjectM.EntityCreator
+ProjectM.AbilityOwner
+ProjectM.Buff
+ProjectM.AbsorbBuff
+ProjectM.MultiplyAbsorbCapBySpellPower
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Age
+ProjectM.BuffCategory
+ProjectM.LifeTime
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Shared.SpellModSetComponent
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.Shared.SpellModArithmetic [Buffer]
+Unity.Entities.SpawnTag
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.Network.NetworkSnapshotType
