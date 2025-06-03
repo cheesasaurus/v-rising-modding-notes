@@ -1,0 +1,44 @@
+ProjectM.ModifyMovementSpeedBuffModification
+ProjectM.Attach
+ProjectM.EntityOwner
+ProjectM.EntityCreator
+ProjectM.AbilityOwner
+ProjectM.Buff
+ProjectM.Gameplay.Scripting.Script_CreateGameplayEventOnDamageDealtToEntityCategory_DataServer
+ProjectM.ModifyMovementSpeedBuff
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Age
+ProjectM.BuffCategory
+ProjectM.LifeTime
+ProjectM.BuffModificationFlagData
+ProjectM.Scripting.ScriptDestroy
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Shared.SpellModSetComponent
+ProjectM.Gameplay.Scripting.Script_Buff_ModifyAggroFactor_DataServer
+ProjectM.Gameplay.Scripting.Script_Buff_Stealth_DataServer
+ProjectM.Gameplay.Scripting.Script_ModifyAbilityCooldownOnGameplayEvent_DataServer
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.CreateGameplayEventsOnAbilityTrigger [Buffer]
+ProjectM.CreateGameplayEventsOnDestroy [Buffer]
+ProjectM.CreateGameplayEventOnItemEquipped [Buffer]
+ProjectM.CreateGameplayEventsOnSpawn [Buffer]
+ProjectM.ApplyBuffOnGameplayEvent [Buffer]
+ProjectM.DestroyOnGameplayEvent [Buffer]
+ProjectM.GameplayEventIdMapping [Buffer]
+ProjectM.PlaySequenceOnGameplayEvent [Buffer]
+ProjectM.RunScriptOnGameplayEvent [Buffer]
+ProjectM.SpawnPrefabOnGameplayEvent [Buffer]
+ProjectM.GameplayEventListeners [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.Shared.SpellModArithmetic [Buffer]
+ProjectM.Scripting.ScriptSpawn
+Unity.Entities.SpawnTag
+Unity.Entities.Simulate
+Unity.Entities.BlobAssetOwner
+ProjectM.Network.NetworkSnapshotType
