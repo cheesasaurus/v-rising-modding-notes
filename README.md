@@ -31,19 +31,17 @@ After installation, you will need to run the game once and bepinex will generate
 Installing a mod is as simple as copying a DLL file into the `./BepInEx/Plugins/` directory of your server.
 
 
-## Bloodstone
+## Bloodpebble
 
-Bloodstone provides some hot-reloading capabilities for your mods so you don't have to restart the server every time you want to test a change.
+Bloodpebble provides hot-reloading capabilities for your mods so you don't have to restart the server every time you want to test a change.
 
-It also provides some convenient things through its `VWorld` helper. I've found myself using `VWorld.Server.EntityManager` a lot.
 
-https://v-rising.thunderstore.io/package/deca/Bloodstone/
+https://thunderstore.io/c/v-rising/p/cheesasaurus/Bloodpebble/
 
 Follow the installation instructions at the link.
 
-To hot reload mods you will put them in `./BepInEx/BloodstonePlugins/` instead of the usual Plugins folder.
-- Hot reloading for client-side mods is triggered by pressing the key F6.
-- Hot reloading for server-side mods is done via in-game chat. Admins (must be authed) can type `!reload` into the chat to trigger a reload.
+To hot reload mods you will put them in `./BepInEx/BloodpebblePlugins/` instead of the usual Plugins folder.\
+Reloading is automatically triggered by file changes.
 
 
 ## VCF
@@ -107,7 +105,7 @@ Project iteration looks like this:
 2) Build the project with `dotnet build`
    - if you need dlls for dependencies, you can use `dotnet publish` instead
 4) Copy the DLL to `BepInEx/BloodstonePlugins/`
-5) Go in the game and type `!reload` in the chat.
+5) Wait for bloodpebble to automatically reload the mod (only takes a couple seconds)
 6) Test changes in game.
 7) Repeat
 
@@ -194,7 +192,7 @@ public static class ItemDroppedThrownHook {
 
 ## Use Existing Mods as Example Code
 
-I believe all V Rising mods from [thunderstore](https://v-rising.thunderstore.io/) are open source.
+A lot of V Rising mods from [thunderstore](https://v-rising.thunderstore.io/) are open source.
 
 The source tab shows a truncated version of the decompiled DLL. You most likely want the *actual* source, so use the github link.
 
