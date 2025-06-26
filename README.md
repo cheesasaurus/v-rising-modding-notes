@@ -162,7 +162,7 @@ Instead, we hook the `Update` method of the `DropItemThrowSystem`, which is resp
 Most systems come with an entity query that can be used to find all the entities which will be processed by the update.
 A lot of the time those entities can be thought of as Jobs/Tasks - a specification of something to be done by the system. Which is very similar to an Event, but instead of specifying what already happened, they specify what is going to happen.
 
-[Harmony](https://harmony.pardeike.net/articles/patching-prefix.html) (included with bepinex) provides us with a Prefix and Postfix hook.
+[Harmony](https://github.com/BepInEx/HarmonyX/wiki) (included with bepinex) provides us with a Prefix and Postfix hook.
 
 The Postfix hook doesn't really help us here, because after the update is done, the entity query most likely isn't going to tell us what was processed.
 We need to use the Prefix hook, before the update happens.
@@ -216,7 +216,7 @@ https://github.com/cheesasaurus/v-rising-prefabs-gloomrot
 
 check component types of an entity
 ```
-var componentTypes = VWorld.Server.EntityManager.GetComponentTypes(entity);
+var componentTypes = WorldUtility.FindServerWorld().EntityManager.GetComponentTypes(entity);
 foreach (var componentType in componentTypes) {
     Plugin.Logger.LogMessage(componentType.ToString());
 }
@@ -225,7 +225,7 @@ foreach (var componentType in componentTypes) {
 get specific component of an entity
 ```
 // this retrieves the Equipment component of a character Entity
-var equipment = VWorld.Game.EntityManager.GetComponentData<Equipment>(characterEntity);
+var equipment = WorldUtility.FindServerWorld().EntityManager.GetComponentData<Equipment>(characterEntity);
 ```
 
 
