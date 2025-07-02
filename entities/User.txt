@@ -1,76 +1,56 @@
-ProgressionMapper
-TeamReference
-EntityInput
-Controller
-User
-InputCommandDataProxy
-AchievementOwner
-CurrentMapZone
-LocalToWorld
-Rotation
-Translation
-PrefabGUID
-ClanRole
-DestroyData
-DestroyState
-Emoter
-Shapeshift
-Team
-JoinDefaultTeamOnSpawn
-ModifiableValueIds
-CurrentWorldRegion
-NetworkedSettings
-UpToDateUserBitMask
-OnlySyncToUserBitMask
-Latency
-FrameChanged
-NetworkId
-NetworkSnapshot
-DisconnectedTimer
-UserHeartCount
-AdminUser
-ConnectedUser
-ServerNetworkState
-AttachParentId
-AttachedBuffer [B]
-BoolModificationBuffer [B]
-EntityModificationBuffer [B]
-OnlySyncToUserBuffer [B]
-InputCommandBufferElement [B]
-AllyPermission [B]
-RespawnPointOwnerBuffer [B]
-UserMapZoneElement [B]
-QueuedWorkstationCraftAction [B]
-QueuedWorkstationCraftActionItems [B]
-WorkstationRecipesBuffer [B]
-UnlockedWaypointElement [B]
-NetSnapshot [B]
-SnapshotFrameChangedBuffer [B]
-TileCollisionHistoryElement [B]
-TileGameplayHeightsHistoryElement [B]
-TileCollisionHistoryMetadataElement [B]
-TileDisabledCollisionHistoryElement [B]
-InputCommandStateHistoryBufferElement [B]
-DefaultAction [B]
-EmoteAbility [B]
-ShapeshiftAbility [B]
-Snapshot_AllyPermission [B]
-Snapshot_QueuedWorkstationCraftAction [B]
-Snapshot_RespawnPointOwnerBuffer [B]
-Snapshot_UnlockedWaypointElement [B]
-Snapshot_UserMapZoneElement [B]
-UserDestroyedEntityBuffer [B]
-IncomingClientMessage [B]
-IncomingNetBuffer [B]
-UserNetBuffer [B]
-PriorityEntitiesToSerializeBuffer [B]
-PanicEntitiesToSerializeBuffer [B]
-UserEntityNetworkState [B]
-PrefabCollectionPrefabTag
-UsesSpawnTag
-Networked
-AlwaysNetworked
-EntitySpawnedMetadata
-IsConnected
-EntityMetadata
-NetworkSnapshotType
+ProjectM.AchievementOwner
+ProjectM.CurrentMapZone
+ProjectM.ProgressionMapper
+ProjectM.EntityInput
+ProjectM.Controller
+ProjectM.Network.User
+ProjectM.Network.InputCommandDataProxy
+ProjectM.ClanRole
+ProjectM.DestroyData
+ProjectM.DestroyState
+ProjectM.Emoter
+ProjectM.Shapeshift
+ProjectM.Team
+ProjectM.Terrain.CurrentWorldRegion
+ProjectM.Network.Networked
+ProjectM.Network.UpToDateUserBitMask
+ProjectM.Network.SyncToUserBitMask
+ProjectM.Network.Latency
+ProjectM.Network.FrameChanged
+ProjectM.Network.NetworkSnapshot
+ProjectM.Network.UserStats
+ProjectM.Network.UserVisitedRegions
+ProjectM.Network.DisconnectedTimer
+ProjectM.Network.UserHeartCount
+ProjectM.Network.UserControllerData
+ProjectM.Network.UserTutorialProgression
+Unity.Transforms.Rotation
+Unity.Transforms.Translation
+Unity.Transforms.LocalToWorld
+Unity.Transforms.LocalTransform
+ProjectM.TeamReference
+ProjectM.Network.NetworkId
+Stunlock.Core.PrefabGUID
+ProjectM.AttachParentId
+ProjectM.AllyPermission [Buffer]
+ProjectM.RespawnPointOwnerBuffer [Buffer]
+ProjectM.UserMapZoneElement [Buffer]
+ProjectM.QueuedWorkstationCraftAction [Buffer]
+ProjectM.QueuedWorkstationCraftActionItems [Buffer]
+ProjectM.AttachedBuffer [Buffer]
+ProjectM.Network.SyncToUserBuffer [Buffer]
+ProjectM.EmoteAbility [Buffer]
+ProjectM.ShapeshiftAbility [Buffer]
+ProjectM.Network.Snapshot_AllyPermission [Buffer]
+ProjectM.Network.Snapshot_QueuedWorkstationCraftAction [Buffer]
+ProjectM.Network.Snapshot_RespawnPointOwnerBuffer [Buffer]
+ProjectM.Network.Snapshot_UnlockedWaypointElement [Buffer]
+ProjectM.Network.Snapshot_UserMapZoneElement [Buffer]
+ProjectM.WorkstationRecipesBuffer [Buffer]
+ProjectM.UnlockedWaypointElement [Buffer]
+ProjectM.Network.NetSnapshot [Buffer]
+ProjectM.Network.SnapshotFrameChangedBuffer [Buffer]
+ProjectM.Network.AlwaysNetworked
+ProjectM.Network.OnlySyncToUsersTag
+Unity.Entities.Simulate
+ProjectM.Network.NetworkSnapshotType
